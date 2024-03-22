@@ -26,7 +26,7 @@
 -------------------------------------------------
 */
 /*-------------   Color Variable  --------------*/
-@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800|Barlow:300,400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800|Barlow:300,400,500,600,700&display=swap');
 /* line 34, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_color.scss */
 .white-bg {
   background: #ffffff;
@@ -101,7 +101,7 @@
   color: #c6a16e !important;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -148,59 +148,59 @@
   top: 0;
   right: 0;
   bottom: 0;
-  content: "";
+  content: '';
 }
 
 /*-- Overlay Opacity --*/
 /* line 22, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="1"]::before {
+[data-opacity='1']::before {
   opacity: 0.1;
 }
 
 /* line 27, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="2"]::before {
+[data-opacity='2']::before {
   opacity: 0.2;
 }
 
 /* line 32, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="3"]::before {
+[data-opacity='3']::before {
   opacity: 0.3;
 }
 
 /* line 37, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="4"]::before {
+[data-opacity='4']::before {
   opacity: 0.4;
 }
 
 /* line 42, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="5"]::before {
+[data-opacity='5']::before {
   opacity: 0.5;
 }
 
 /* line 47, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="6"]::before {
+[data-opacity='6']::before {
   opacity: 0.6;
 }
 
 /* line 52, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="7"]::before {
+[data-opacity='7']::before {
   opacity: 0.7;
 }
 
 /* line 57, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="8"]::before {
+[data-opacity='8']::before {
   opacity: 0.8;
 }
 
 /* line 62, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_overlay.scss */
-[data-opacity="9"]::before {
+[data-opacity='9']::before {
   opacity: 0.9;
 }
 
 /* 1. Theme default css */
 /* line 4, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -212,7 +212,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   margin-top: 0px;
   font-style: normal;
@@ -222,7 +222,7 @@ h6 {
 
 /* line 23, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 p {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   color: #10285d;
   font-size: 16px;
   line-height: 30px;
@@ -318,7 +318,11 @@ button {
 }
 
 /* line 88, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
-button:focus, input:focus, input:focus, textarea, textarea:focus {
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
   outline: 0;
 }
 
@@ -330,9 +334,9 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 /* line 93, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 input:focus::-moz-placeholder {
   opacity: 0;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* line 100, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
@@ -378,7 +382,7 @@ hr {
 /* line 132, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .theme-overlay::before {
   background: #1696e7 none repeat scroll 0 0;
-  content: "";
+  content: '';
   height: 100%;
   left: 0;
   opacity: 0.6;
@@ -396,7 +400,7 @@ hr {
 /* line 146, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .overlay::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -413,8 +417,8 @@ hr {
 /* line 160, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .overlay2::before {
   position: absolute;
-  content: "";
-  background-color: #2E2200;
+  content: '';
+  background-color: #2e2200;
   top: 0;
   left: 0;
   width: 100%;
@@ -509,7 +513,7 @@ hr {
   background: #c6a16e;
   padding: 27px 44px;
   text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -532,7 +536,7 @@ hr {
 
 /* line 271, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .btn::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -562,7 +566,8 @@ a:hover {
 }
 
 /* line 298, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   outline: 0;
   box-shadow: none;
 }
@@ -613,7 +618,7 @@ a:hover {
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 14px;
   border-radius: 5px;
   border: 0;
@@ -691,7 +696,7 @@ hero-btn {
 /* line 389, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .border-btn::before {
   border: 1px solid transparent;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -721,7 +726,8 @@ hero-btn {
 
 /* scrollUp */
 /* line 423, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
-#scrollUp, #back-top {
+#scrollUp,
+#back-top {
   background: #c6a16e;
   height: 50px;
   width: 50px;
@@ -740,13 +746,15 @@ hero-btn {
 
 @media (max-width: 575px) {
   /* line 423, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
-  #scrollUp, #back-top {
+  #scrollUp,
+  #back-top {
     right: 16px;
   }
 }
 
 /* line 441, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
-#scrollUp a i, #back-top a i {
+#scrollUp a i,
+#back-top a i {
   display: block;
   line-height: 50px;
 }
@@ -2483,9 +2491,9 @@ hero-btn {
   right: 0;
   bottom: 0;
   z-index: 999999;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
   margin: 0 auto;
 }
 
@@ -2507,9 +2515,9 @@ hero-btn {
   background-color: #fff;
   -webkit-animation: zoom 2000ms infinite ease;
   animation: zoom 2000ms infinite ease;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 /* line 637, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
@@ -2531,9 +2539,9 @@ hero-btn {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-top: 6px;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 /* line 658, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
@@ -2552,16 +2560,16 @@ hero-btn {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
 }
 
@@ -2569,16 +2577,16 @@ hero-btn {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
 }
 
@@ -3251,7 +3259,7 @@ hero-btn {
   padding: 39px 19px;
   display: block;
   font-size: 16px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -3466,14 +3474,13 @@ hero-btn {
 
 /* line 37, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area {
-  background-image: url(../img/hero/service.jpg) ;
-  
+  background-image: url(../img/hero/service.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* line 43, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
-
 
 /* line 50, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption {
@@ -3510,7 +3517,7 @@ hero-btn {
 /* line 68, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption span::before {
   position: absolute;
-  content: "";
+  content: '';
   background-image: url(../img/hero/219.023_Saluto-Interior-Room-Bild-02_NYC-Loft_V01_Gold.png);
   background-repeat: no-repeat;
   height: 35%;
@@ -3608,7 +3615,7 @@ hero-btn {
 /* line 143, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .hero-overly::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: rgba(1, 10, 28, 0.6);
   width: 100%;
   height: 100%;
@@ -3747,7 +3754,8 @@ hero-btn {
   right: -2px;
   border-radius: inherit;
   border: 1px solid #c6a16e;
-  -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+  -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
+    infinite;
   animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
 }
 
@@ -3791,7 +3799,7 @@ hero-btn {
 /* line 7, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_our-info.scss */
 .our-info-area .single-info .info-caption::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 70px;
   height: 100px;
   border: 2px solid #292c32;
@@ -3810,7 +3818,7 @@ hero-btn {
   position: relative;
   z-index: 2;
   margin-bottom: 15px;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 /* line 29, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_our-info.scss */
@@ -3936,7 +3944,7 @@ hero-btn {
 .services-area .single-services .services-caption h3 {
   margin-bottom: 15px;
   line-height: 13px;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   position: relative;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -3961,7 +3969,7 @@ hero-btn {
 /* line 32, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_services_section.scss */
 .services-area .single-services .services-caption h3::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 35px;
   height: 2px;
   top: 0;
@@ -4025,7 +4033,7 @@ hero-btn {
 
 /* line 72, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_services_section.scss */
 .services-area .single-services:hover .services-caption h3 {
-  color: #FFF;
+  color: #fff;
 }
 
 /* line 74, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_services_section.scss */
@@ -4130,7 +4138,7 @@ hero-btn {
   right: 0;
   height: 100%;
   width: 100%;
-  content: "";
+  content: '';
   background-color: rgba(1, 10, 28, 0.6);
   opacity: 0;
   z-index: 1;
@@ -4167,7 +4175,7 @@ hero-btn {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: .4s;
+  transition: 0.4s;
   z-index: 2;
 }
 
@@ -4256,7 +4264,8 @@ hero-btn {
 }
 
 /* line 101, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_gallery.scss */
-.single-gallery:hover .gallery-img-thumb, .single-gallery:hover .thumb-content-box {
+.single-gallery:hover .gallery-img-thumb,
+.single-gallery:hover .thumb-content-box {
   opacity: 1;
   visibility: visible;
 }
@@ -4266,6 +4275,9 @@ hero-btn {
   overflow: hidden;
   margin-bottom: 19px;
 }
+/* .single-team .team-img:hover {
+  width: 200%;
+} */
 
 /* line 5, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_team.scss */
 .single-team .team-img img {
@@ -4273,13 +4285,16 @@ hero-btn {
   transform: scale(1);
   transition: all 0.6s ease-out 0s;
 }
+/* .single-team .team-img img:hover {
+width:125%
+} */
 
 /* line 12, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_team.scss */
 .single-team .team-caption span {
   color: #959595;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   display: block;
   position: relative;
   margin-left: 50px;
@@ -4289,7 +4304,7 @@ hero-btn {
 /* line 21, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_team.scss */
 .single-team .team-caption span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 35px;
   height: 2px;
   left: -47px;
@@ -4393,11 +4408,16 @@ hero-btn {
   font-size: 18px;
   line-height: 1;
   display: block;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 /* line 60, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_testimonial.scss */
-.testimonial-area .testimonial-caption .testimonial-founder .founder-img span strong {
+.testimonial-area
+  .testimonial-caption
+  .testimonial-founder
+  .founder-img
+  span
+  strong {
   font-weight: 300;
   color: #ffff;
 }
@@ -4601,7 +4621,7 @@ hero-btn {
 /* line 43, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-top .single-footer-caption .footer-tittle h4 {
   color: #fff;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 18px;
   margin-bottom: 38px;
   font-weight: 500;
@@ -4703,7 +4723,7 @@ hero-btn {
 /* line 133, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-social span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 43px;
   height: 2px;
   background: #3b3647;
@@ -4768,7 +4788,7 @@ hero-btn {
 /* line 10, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_services.scss */
 .hero-caption span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 75px;
   height: 3px;
   background: #c6a16e;
@@ -4822,7 +4842,7 @@ hero-btn {
 .home-blog-area .home-blog-single .blog-img-cap ul li {
   display: inline-block;
   font-size: 14px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   color: #787878;
 }
@@ -4925,7 +4945,7 @@ hero-btn {
   color: #3a3a3a;
   text-transform: capitalize;
   font-size: 14px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   color: #3a3a3a;
   position: relative;
   padding-left: 50px;
@@ -4934,7 +4954,7 @@ hero-btn {
 /* line 86, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap .more-btn::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 35px;
   height: 2px;
   left: 0px;
@@ -4969,18 +4989,19 @@ hero-btn {
 
 /* line 125, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .blog_area a {
-  color: "Barlow Condensed", sans-serif !important;
+  color: 'Barlow Condensed', sans-serif !important;
   text-decoration: none;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* line 129, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
-.blog_area a:hover, .blog_area a :hover {
+.blog_area a:hover,
+.blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #c6a16e 0%, #c6a16e 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* line 139, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
@@ -5111,7 +5132,7 @@ hero-btn {
 
 /* line 250, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .single-blog:hover .thumb:after {
-  opacity: .7;
+  opacity: 0.7;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -5281,7 +5302,7 @@ hero-btn {
 
 /* line 422, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .causes_item .causes_img .c_parcent span:before {
-  content: "75%";
+  content: '75%';
   position: absolute;
   right: -10px;
   bottom: 0px;
@@ -5542,7 +5563,7 @@ hero-btn {
 
 /* line 692, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .blog-info-link li::after {
-  content: "|";
+  content: '|';
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -5554,7 +5575,7 @@ hero-btn {
 
 /* line 703, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .blog-info-link::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
   display: table;
@@ -5624,7 +5645,7 @@ hero-btn {
 
 /* line 767, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .blog_right_sidebar .widget_title::after {
-  content: "";
+  content: '';
   display: block;
   padding-top: 15px;
   border-bottom: 1px solid #f0e9ff;
@@ -6123,7 +6144,7 @@ hero-btn {
 
 /* line 1382, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -6171,7 +6192,7 @@ hero-btn {
 
 /* line 1417, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_blog_page.scss */
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 991px) {
@@ -6403,7 +6424,8 @@ hero-btn {
 }
 
 /* line 16, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_contact.scss */
-.contact-info__icon i, .contact-info__icon span {
+.contact-info__icon i,
+.contact-info__icon span {
   color: #8f9195;
   font-size: 27px;
 }
@@ -6595,7 +6617,7 @@ hero-btn {
   color: #fff;
   font-weight: 900;
   margin-bottom: 0;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   text-transform: capitalize;
 }
 
@@ -6642,7 +6664,7 @@ hero-btn {
 .popup_box h3 {
   text-align: center;
   font-size: 22px;
-  color: #1F1F1F;
+  color: #1f1f1f;
   margin-bottom: 46px;
 }
 
@@ -6657,13 +6679,13 @@ hero-btn {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   /* border-radius: 5px; */
-  border: solid 1px #E2E2E2;
+  border: solid 1px #e2e2e2;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
   display: block;
   float: left;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: normal;
   width: 100% !important;
   /* height: 42px; */
@@ -6691,7 +6713,7 @@ hero-btn {
 
 /* line 101, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_bradcam.scss */
 .popup_box .nice-select::after {
-  content: "\f0d7";
+  content: '\f0d7';
   display: block;
   height: 5px;
   margin-top: -5px;
@@ -6786,7 +6808,7 @@ hero-btn {
   touch-action: manipulation;
   width: 40px;
   height: 40px;
-  background: #4A3600;
+  background: #4a3600;
   text-align: center;
   line-height: 20px;
   position: absolute;
@@ -6807,7 +6829,7 @@ hero-btn {
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #4A3600;
+  background: #4a3600;
   opacity: 0.6;
 }
 
@@ -6842,9 +6864,21 @@ hero-btn {
 
 /* line 13, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_extend.scss */
 .overlay::before {
-  background-image: -moz-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
-  background-image: -webkit-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
-  background-image: -ms-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
+  background-image: -moz-linear-gradient(
+    170deg,
+    rgba(34, 34, 34, 0) 0%,
+    black 100%
+  );
+  background-image: -webkit-linear-gradient(
+    170deg,
+    rgba(34, 34, 34, 0) 0%,
+    black 100%
+  );
+  background-image: -ms-linear-gradient(
+    170deg,
+    rgba(34, 34, 34, 0) 0%,
+    black 100%
+  );
 }
 
 /* line 76, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
@@ -6906,7 +6940,7 @@ del {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -7327,7 +7361,7 @@ del {
 
 /* line 427, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .unordered-list li:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 14px;
   height: 14px;
@@ -7576,7 +7610,7 @@ del {
 
 /* line 631, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .primary-switch input + label:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -7595,7 +7629,7 @@ del {
 
 /* line 645, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .primary-switch input + label:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 1px;
   left: 1px;
@@ -7656,7 +7690,7 @@ del {
 
 /* line 696, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .confirm-switch input + label:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -7675,7 +7709,7 @@ del {
 
 /* line 710, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .confirm-switch input + label:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 1px;
   left: 1px;
@@ -7739,7 +7773,8 @@ del {
 
 /* line 766, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -7781,7 +7816,8 @@ del {
 
 /* line 803, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -7829,7 +7865,8 @@ del {
 
 /* line 844, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -7871,7 +7908,8 @@ del {
 
 /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -7913,7 +7951,8 @@ del {
 
 /* line 918, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -7961,7 +8000,8 @@ del {
 
 /* line 959, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_elements.scss */
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -8114,77 +8154,93 @@ del {
 .switch-wrap {
   margin-bottom: 10px;
 }
-.logo img{
+.logo img {
   height: 50px;
   width: 50px;
   object-fit: cover;
 }
- .slider-area {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-         /* Adjust width as needed */
-        margin: 0 auto;
-    }
+.slider-area {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+}
 
-    .slider {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-    .slide {
-        flex: 0 0 100%;
-        width: 100%;
-    }
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+}
 
-    /* Hide radio buttons */
-    input[type="radio"] {
-        display: none;
-    }
+/* Hide radio buttons */
+input[type='radio'] {
+  display: none;
+}
 
-    /* Show radio buttons as dots */
-    .dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
+/* Show radio buttons as dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-    .dot {
-        height: 10px;
-        width: 10px;
-        background-color: #bbb;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-    }
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
 
-    /* Slide Animation */
-    input[type="radio"]:checked ~ .slider {
-        transform: translateX(-100%);
-    }
+/* Slide Animation */
+input[type='radio']:checked ~ .slider {
+  transform: translateX(-100%);
+}
 
-    /* Hide the other slides */
-    input[type="radio"]:checked ~ .dots label {
-        background-color: #bbb;
-    }
+/* Hide the other slides */
+input[type='radio']:checked ~ .dots label {
+  background-color: #bbb;
+}
 
-    /* Show active slide's dot */
-    input[type="radio"]:checked ~ .dots label[for="slide2"] {
-        background-color: #333;
-    }
+/* Show active slide's dot */
+input[type='radio']:checked ~ .dots label[for='slide2'] {
+  background-color: #333;
+}
 
-    .slider > .slide {
-        animation: slide 10s linear infinite;
-    }
+.slider > .slide {
+  animation: slide 10s linear infinite;
+}
 
-    @keyframes slide {
-        0% { transform: translateX(0%); }
-        25% { transform: translateX(0%); }
-        30% { transform: translateX(-100%); }
-        55% { transform: translateX(-100%); }
-        60% { transform: translateX(-200%); }
-        85% { transform: translateX(-200%); }
-        90% { transform: translateX(-300%); }
-        100% { transform: translateX(-300%); }
-    }
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  85% {
+    transform: translateX(-200%);
+  }
+  90% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
 /*# sourceMappingURL=style.css.map */
