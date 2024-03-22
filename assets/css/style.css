@@ -2927,14 +2927,12 @@ hero-btn {
   }
 }
 
-/* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .section-padding3 {
   padding-top: 195px;
   padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
   .section-padding3 {
     padding-top: 195px;
     padding-bottom: 100px;
@@ -2942,7 +2940,6 @@ hero-btn {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
   .section-padding3 {
     padding-top: 95px;
     padding-bottom: 0px;
@@ -2950,7 +2947,6 @@ hero-btn {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
   .section-padding3 {
     padding-top: 60px;
     padding-bottom: 0;
@@ -2958,10 +2954,49 @@ hero-btn {
 }
 
 @media (max-width: 575px) {
-  /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
   .section-padding3 {
     padding-top: 60px;
     padding-bottom: 0;
+  }
+}
+
+.section-tittle {
+  text-align: center;
+}
+
+.section-tittle span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Change the color to white or any other color that contrasts well with black */
+  text-transform: uppercase; /* Convert text to uppercase for emphasis */
+}
+
+.section-tittle h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white; /* Change the color to white or any other color that contrasts well with black */
+  margin-bottom: 10px;
+}
+
+.section-tittle h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for emphasis */
+}
+
+/* Increase font size for team captions */
+.team-caption h6 {
+  font-size: 20px; /* Adjust the font size as needed */
+}
+.team-caption h6:hover {
+  color: yellow !important; /* Change the color to yellow on hover */
+}
+
+/* Optional: Increase font size for team captions on smaller screens */
+@media only screen and (max-width: 576px) {
+  .team-caption h6 {
+    font-size: 18px; /* Adjust the font size as needed */
   }
 }
 
@@ -3920,6 +3955,13 @@ hero-btn {
 .services-area .single-services {
   position: relative;
 }
+.service-image-section {
+  height: 25rem;
+  transition: all 0.4s ease-out 0s;
+  transform: translateY(0px);
+}
+
+
 
 /* line 6, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_services_section.scss */
 .services-area .single-services .services-img img {
