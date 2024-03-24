@@ -22,16 +22,28 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
-   <script>
-    
-function googleTranslateElementInit(){
-    new google.translate.TranslateElement(
-        {pageLanguage:'en'},
-        'google_translate_element'
-    )
-}
-
-   </script>
+            <script>
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                    { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
+                    'google_translate_element',
+                  )
+          
+                  window.setInterval(function () {
+                    // Get the selected language
+                    var lang = document.querySelector('html').getAttribute('lang')
+                    if (lang == 'ar') {
+                      // Change footer color to white for selected languages
+                      document.getElementById('footer_section_a').style.display = 'block'
+                      document.getElementById('footer_section_o').style.display = 'none'
+                    } else {
+                      // Change footer color to green for other languages
+                      document.getElementById('footer_section_a').style.display = 'none'
+                      document.getElementById('footer_section_o').style.display = 'block'
+                    }
+                  }, 5000)
+                }
+              </script>
    </head>
 
    <body class="body-bg">
@@ -162,7 +174,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200" >
                             <div class="services-img" >
-                                <img src="assets/img/gallery/service_one.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_one.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption" >
                                 <h6 style="color: black;"> 24 carat colored panel prefabricated wall panels incl. customized color décor surface: glossy or matt 20 colors available where to protected surface</h6>
@@ -175,7 +187,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_two.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_two.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold panel prefabricated & made to measure wall panels for cladding wall design ready to fix protected surface glossy or matt 20 colors available  </h6>
@@ -188,7 +200,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_three.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_three.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption" >
                                 <h6 style="color: black;">24 carat embossed panel prefabricated & made to measure wall panels for cladding wall design ready to fix protected surface glossy or matt 20 colors available </h6>
@@ -201,7 +213,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_four.jpeg" style="height: 10rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_four.jpeg" style="height: 10rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h67 style="color: black;">24 carat waterproof panel prefabricated & made to measure wall panels 24 carat double gold behind 4/6 mm tempered glass and 3 mm aluminum board a light, transportable laminated panel, waterproof Surface: glossy 7 colors available</h6>
@@ -212,7 +224,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_five.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_five.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">gold with glass 24 carat gold mosaic made to measure (size starts from 2 x 2 cm) behind 4/6/8 mm (tempered) glass or gold between glass ready to fix Surface: glossy 7 colors available</h6>
@@ -224,7 +236,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_six.jpeg" style="height: 18rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_six.jpeg" style="height: 18rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold behind glass prefabricated & made to measure wall panels 24 carat double gold behind 6 mm tempered glass </h6>
@@ -237,7 +249,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_seven.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_seven.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;"> gold behind glass and colored gold 24 carat gold tiles made to measure 24 carat double gold behind 6 mm (tempered) glass ready to fix  </h6>
@@ -248,7 +260,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_eight.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_eight.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat wall paper self-adhesive wallpaper protected surface ready to use surface: glossy or matt 20 colors available </h6>
@@ -259,7 +271,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_nine.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_nine.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold wallpaper DESIGN customized décor or design self-adhesive wallpaper protected surface ready to use surface: glossy or matt 20 colors available </h6>
@@ -270,7 +282,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_ninez.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_ninez.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat ceiling panel prefabricated & made to measure ceiling panels ready to fix protected surface glossy or matt 20 colors available </h6>
@@ -282,7 +294,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_ten.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_ten.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">24 carat wall panel pre-fabricated & made to measure wall papers protected surface easy to fix surface: glossy or matt 20 colors available </h6>
@@ -293,7 +305,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_eleven.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_eleven.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold and platinum flooring customized décor or design behind / under 8 mm tempered glass made to measure 20 colors available </h6>
@@ -307,7 +319,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_tweleve.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_tweleve.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">laminated safety glass customized décor or design between 2 layers of 6 mm tempered glass </h6>
@@ -318,7 +330,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirteen.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirteen.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;">24 carat gold plated brick stone natural stone (granite, marble, limestone) 20 colors available different sizes </h6>
@@ -329,7 +341,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_fourteen.jpeg" style="height: 16.5rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_fourteen.jpeg" style="height: 16.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold plated counter glossy or matt 20 colors available </h6>
@@ -340,7 +352,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_fifteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_fifteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;">mirror with gold plated décor stick on or sandblasted </h6>
@@ -351,7 +363,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_sixteen.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_sixteen.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">gold leaf on wood individual design made to measure surface: glossy, varnished 20 colors available </h6>
@@ -362,7 +374,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_seventeen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_seventeen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">furniture with 24 carat surface: glossy or matt 4 colors available </h6>
@@ -375,7 +387,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_eighteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_eighteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">acrylic glass panels with gold prefabricated & made to measure ceiling panels customized design / décor 6 / 8 / 12 / 20 mm thickness ready to fix surface: glossy 20 colors available </h6>
@@ -386,7 +398,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_nineteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_nineteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold behind glass prefabricated & made to measure glass items customized design / décor 6 / 8 / 12 / 20 mm thickness tempered glass surface: glossy 20 colors available </h6>
@@ -397,7 +409,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twenty.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twenty.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat with MDF / PVC panel PVC panel or MDF board / wood panel made to measure prefabricated and ready to fix surface: glossy or matt 20 colors available protected surface also possible with colored gold! </h6>
@@ -408,7 +420,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twentyone.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentyone.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat lettering lettering or names logos an information behind acrylic / tempered / laminated glass surface: glossy 20 colors available </h6>
@@ -419,7 +431,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twentytwo.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentytwo.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">24 carat frame customized design / décor custom made size for different surfaces surface: glossy or matt 20 colors available </h6>
@@ -430,7 +442,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twentythree.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentythree.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">laminated glass – gold tiles customized design / décor custom made size surface: glossy 20 colors available 
@@ -445,7 +457,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twentysix.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentysix.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">stuff & items gold plated items surface: glossy 3 colors available   </h6>
@@ -456,7 +468,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_twentyseven.jpeg" style="height: 15rem;" alt="">
+                                 <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentyseven.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">Gold behind acrylic glass made to measure surface: glossy 20 colors available</h6>
@@ -469,7 +481,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirty.jpeg" style="height: 12.5rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirty.jpeg" style="height: 12.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat lettering lettering or names logos an information behind acrylic / tempered / laminated glass surface: glossy 20 colors available </h6>
@@ -482,7 +494,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtyone.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyone.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole glass or particularly </h6>
@@ -493,7 +505,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtytwo.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtytwo.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">gold application whole plate or particularly </h6>
@@ -504,7 +516,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtyfour.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyfour.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole piece or particularly </h6>
@@ -515,7 +527,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtyfive.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyfive.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">re-usable straws plated with 24 carat gold sustainable </h6>
@@ -526,7 +538,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtysix.jpeg" style="height: 12.5rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtysix.jpeg" style="height: 12.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color:black;">customized application with 24 carat gold leaf individual design or completely covered with 24 carat gold </h6>
@@ -537,7 +549,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtyseven.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyseven.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold plated items </h6>
@@ -550,7 +562,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtyeight.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyeight.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">hinge fittings bathroom faucet </h6>
@@ -561,7 +573,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/service_thirtynine.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtynine.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">salt shaker luxury soap with gold leaf sm</h6>
@@ -572,7 +584,7 @@ function googleTranslateElementInit(){
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/forty.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/forty.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">luxury soap with gold leaf </h6>
@@ -641,93 +653,298 @@ function googleTranslateElementInit(){
         <!-- Want To work End -->
     </main>
     <footer>
-     <!--? Footer Start-->
-     <div class="footer-area footer-bg">
+      <!--? Footer Start-->
+      <div class="footer-area footer-bg" id="footer_section_a">
+        <h1 id="hello"></h1>
         <div class="container">
-            <div class="footer-top footer-padding">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
-                        <div class="single-footer-caption mb-50">
-                            <!-- logo -->
-                            <div class="footer-logo">
-                                <a href="index.html"><img style="height: 3rem;" src="assets/img/logo/logo 2.footer.jpg" alt=""></a>
-                                 <h6>GoldLeaf</h6>
-                            </div>
-                            <div class="footer-tittle">
-                                <div class="footer-pera">
-                                    <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
-                                </div>
-                            </div>
-                            <div class="footer-number">
-                                <h4><span ><i class="fab fa-whatsapp" style="margin-right: 10px;"></i>+ 49  </span>179 979 45 01</h4>
-                                <h4><span><i class="fa fa-phone" style="margin-right: 10px;"  aria-hidden="true"></i>+ 49  </span>9122 18 99 210</h4>
-                               
-                                 + 49  mail@goldleaf-gmbh.com www.goldleaf-gmbh.com
-                                <p>www.goldleaf-gmbh.com</p>
-                                <p>mail@goldleaf-gmbh.com</p>
-                            </div>
-                        </div>
+          <div class="footer-top footer-padding">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img
+                        style="height: 3rem;"
+                        src="assets/img/logo/logo 2.footer.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h6>GoldLeaf</h6>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
                     </div>
-                    <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Useful Links</h4>
-                            </div>
-                            <!-- <div class="footer-cap">
+                  </div>
+                  <div class="footer-number">
+                    <h4>
+                      <span>
+                        <i
+                          class="fab fa-whatsapp"
+                          style="margin-right: 10px;"
+                        ></i>
+                        + 971
+                      </span>
+                      50 890 6949
+                    </h4>
+                    <h4>
+                      <span>
+                        <i
+                          class="fa fa-phone"
+                          style="margin-right: 10px;"
+                          aria-hidden="true"
+                        ></i>
+                        + 971
+                      </span>
+58 596 4561                    </h4>
+
+                    <p>www.goldleaf-gmbh.com</p>
+                    <p>mail@goldleaf-gmbh.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Useful Links</h4>
+                  </div>
+                  <!-- <div class="footer-cap">
                                 <span>Dubai</span>
                                 <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
                                 </p>
                             </div> -->
-                            <div class="footer-cap">
-                                <span>Germany</span>
-                                <p>91126 Schwach Germany</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Instagram -->
-                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Instagram Feed</h4>
-                            </div>
-                            <div class="instagram-gellay">
-                                <ul class="insta-feed">
-                                    <li><a href="#"><img src="assets/img/gallery/instagram1.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/gallery/instagram2.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/gallery/instagram3.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/gallery/instagram4.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/gallery/instagram5.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/gallery/instagram6.png" alt=""></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="footer-cap">
+                    <span>Dubai</span>
+                    <p> Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
+                  </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col-xl-9 col-lg-8">
-                        <div class="footer-copy-right">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Auxxweb</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4">
-                        <!-- Footer Social -->
-                        <div class="footer-social f-right">
-                            <span>Follow Us</span>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
+              </div>
+              <!-- Instagram -->
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Instagram Feed</h4>
+                  </div>
+                  <div class="instagram-gellay">
+                    <ul class="insta-feed">
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram1.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram2.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram3.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram4.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram5.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram6.png" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-9 col-lg-8">
+                <div class="footer-copy-right">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by
+                    <a href="https://colorlib.com" target="_blank">Auxxweb</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4">
+                <!-- Footer Social -->
+                <div class="footer-social f-right">
+                  <span>Follow Us</span>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/sai4ull">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Footer End-->
+      </div>
+      <div class="footer-area footer-bg" id="footer_section_o">
+        <h1 id="hello"></h1>
+        <div class="container">
+          <div class="footer-top footer-padding">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img
+                        style="height: 3rem;"
+                        src="assets/img/logo/logo 2.footer.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h6>goldleaf</h6>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
+                    </div>
+                  </div>
+                  <div class="footer-number">
+                    <h4>
+                      <span>
+                        <i
+                          class="fab fa-whatsapp"
+                          style="margin-right: 10px;"
+                        ></i>
+                        + 49
+                      </span>
+                      179 979 45 01
+                    </h4>
+                    <h4>
+                      <span>
+                        <i
+                          class="fa fa-phone"
+                          style="margin-right: 10px;"
+                          aria-hidden="true"
+                        ></i>
+                        + 49
+                      </span>
+                      9122 18 99 210
+                    </h4>
+
+                    mail@goldleaf-gmbh.com www.goldleaf-gmbh.com
+                    <p>www.goldleaf-gmbh.com</p>
+                    <p>mail@goldleaf-gmbh.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Useful Links</h4>
+                  </div>
+                  <!-- <div class="footer-cap">
+                                <span>Dubai</span>
+                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                                </p>
+                            </div> -->
+                  <div class="footer-cap">
+                    <span>Germany</span>
+                    <p>91126 Schwach Germany</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Instagram -->
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Instagram Feed</h4>
+                  </div>
+                  <div class="instagram-gellay">
+                    <ul class="insta-feed">
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram1.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram2.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram3.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram4.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram5.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/img/gallery/instagram6.png" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-9 col-lg-8">
+                <div class="footer-copy-right">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by
+                    <a href="https://colorlib.com" target="_blank">Auxxweb</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4">
+                <!-- Footer Social -->
+                <div class="footer-social f-right">
+                  <span>Follow Us</span>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/sai4ull">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
     <div id="back-top" >
