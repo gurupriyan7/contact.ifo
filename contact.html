@@ -35,6 +35,8 @@
             // Change footer color to white for selected languages
             document.getElementById('footer_section_a').style.display = 'block'
             document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('contact_sub_a').style.display = 'block'
+            document.getElementById('contact_sub_o').style.display = 'none'
             var arabicMapLink ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14443.952738704667!2d55.2413349!3d25.1698768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ec8870daed%3A0xe7f755d4a39c5ef1!2sOasis%20Mall!5e0!3m2!1sen!2sin!4v1711334427441!5m2!1sen!2sin"
             if(document.getElementById('map_frame').src!=arabicMapLink)
             document.getElementById('map_frame').src=arabicMapLink
@@ -44,6 +46,8 @@
             // Change footer color to green for other languages
             document.getElementById('footer_section_a').style.display = 'none'
             document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('contact_sub_a').style.display = 'none'
+            document.getElementById('contact_sub_o').style.display = 'block'
             if(document.getElementById('map_frame').src!=commonMapLink)
             document.getElementById('map_frame').  src=commonMapLink
           }
@@ -298,7 +302,33 @@
                 })
               </script>
             </div>
-            <div class="col-lg-3 offset-lg-1">
+            <div class="col-lg-3 offset-lg-1" id="contact_sub_a">
+              <div class="media contact-info">
+                <span class="contact-info__icon"><i class="ti-home"></i></span>
+                <div class="media-body">
+                  <h3>Dubai</h3>
+                  <p>sheaikh Zayed Road,beside oasis mall, al qouz 1 </p>
+                </div>
+              </div>
+              <div class="media contact-info">
+                <span class="contact-info__icon">
+                  <i class="ti-tablet"></i>
+                </span>
+                <div class="media-body">
+                  <h3>+971 50 890 6949</h3>
+                  <h3>+971 58 596 4561</h3>
+                  <p>Mon to Fri 9am to 6pm</p>
+                </div>
+              </div>
+              <div class="media contact-info">
+                <span class="contact-info__icon"><i class="ti-email"></i></span>
+                <div class="media-body">
+                  <h3>mail@goldleaf-gmbh.com</h3>
+                  <p>Send us your query anytime!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1" id="contact_sub_o">
               <div class="media contact-info">
                 <span class="contact-info__icon"><i class="ti-home"></i></span>
                 <div class="media-body">

@@ -36,7 +36,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -62,7 +62,7 @@
             // Change footer color to white for selected languages
             document.getElementById('footer_section_a').style.display = 'block'
             document.getElementById('footer_section_o').style.display = 'none'
-          } else {
+          } else  {
             // Change footer color to green for other languages
             document.getElementById('footer_section_a').style.display = 'none'
             document.getElementById('footer_section_o').style.display = 'block'
@@ -719,7 +719,7 @@
     </main>
     <footer>
       <!--? Footer Start-->
-      <div class="footer-area footer-bg" id="footer_section_a">
+      <div class="footer-area footer-bg" id="footer_section_a" style="display: none;">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -787,44 +787,102 @@
               </div>
               <!-- Instagram -->
               <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                <div class="single-footer-caption mb-50">
-                  <div class="footer-tittle">
-                    <h4>Instagram Feed</h4>
-                  </div>
-                  <div class="instagram-gellay">
-                    <ul class="insta-feed">
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram1.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram2.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram3.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram4.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram5.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram6.png" alt="" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-12">
+                  <h2 class="contact-title" style="color: goldenrod;">
+                    Get in Touch
+                  </h2>
+                </div>
+                <div class="col-lg-8">
+                  <!-- form start -->
+                  <form
+                    class="form-contact contact_form"
+                    id="submit-form"
+                    action=""
+                  >
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control w-100"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="9"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Message'"
+                            placeholder=" Enter Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="name"
+                            id="name"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter your name'"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="email"
+                            id="email"
+                            type="email"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter email address'"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            name="phone"
+                            id="phone"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Phone Number'"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        onclick="funt()"
+                        type="submit"
+                        class="button button-contactForm boxed-btn"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                  <!-- form end -->
+                  <script>
+                    $('#submit-form').submit((e) => {
+                      e.preventDefault()
+                      $.ajax({
+                        url:
+                          'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
+                        data: $('#submit-form').serialize(),
+                        method: 'post',
+                        success: function (response) {
+                          alert('Form submitted successfully')
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                        },
+                        error: function (err) {
+                          alert('Something Error')
+                        },
+                      })
+                    })
+                  </script>
                 </div>
               </div>
             </div>
@@ -933,44 +991,102 @@
               </div>
               <!-- Instagram -->
               <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                <div class="single-footer-caption mb-50">
-                  <div class="footer-tittle">
-                    <h4>Instagram Feed</h4>
-                  </div>
-                  <div class="instagram-gellay">
-                    <ul class="insta-feed">
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram1.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram2.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram3.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram4.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram5.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="assets/img/gallery/instagram6.png" alt="" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-12">
+                  <h2 class="contact-title" style="color: goldenrod;">
+                    Get in Touch
+                  </h2>
+                </div>
+                <div class="col-lg-8">
+                  <!-- form start -->
+                  <form
+                    class="form-contact contact_form"
+                    id="submit-form-a"
+                    action=""l
+                  >
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control w-100"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="9"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Message'"
+                            placeholder=" Enter Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="name"
+                            id="name"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter your name'"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="email"
+                            id="email"
+                            type="email"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter email address'"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            name="phone"
+                            id="phone"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Phone Number'"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        onclick="funt()"
+                        type="submit"
+                        class="button button-contactForm boxed-btn"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                  <!-- form end -->
+                  <script>
+                    $('#submit-form-a').submit((e) => {
+                      e.preventDefault()
+                      $.ajax({
+                        url:
+                          'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
+                        data: $('#submit-form').serialize(),
+                        method: 'post',
+                        success: function (response) {
+                          alert('Form submitted successfully')
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                        },
+                        error: function (err) {
+                          alert('Something Error')
+                        },
+                      })
+                    })
+                  </script>
                 </div>
               </div>
             </div>

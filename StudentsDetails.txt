@@ -1,0 +1,5 @@
+anu anuzz 1 5.000000 cs
+guru priyan 2 8.000000 css
+
+guru priyab 4 1.500000 cs
+anu graha 6 4.300000 bba
