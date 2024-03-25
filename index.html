@@ -80,6 +80,37 @@
           text-justify: inter-word; /* Add hyphens to improve justification */
           line-height: 1.6; /* Set line height for better readability */
       }
+     
+  </style>
+  <style>
+     #x {
+         /* animation properties */
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+ 
+  border-radius: 10px;
+  margin: 20px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto;
+  margin-right: auto; 
+      }
+
+      @keyframes my-animation {
+  from {
+    background-color: goldenrod;
+   
+  }
+  to {
+    background-color: #13151B;
+ 
+  }
+}
   </style>
   </head>
 
@@ -398,14 +429,18 @@
       <div class="services-area section-padding3">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="cl-xl-7 col-lg-8 col-md-10">
+            <div class="cl-xl-7 col-lg-8 col-md-10" >
               <!-- Section Tittle -->
-              <div class="section-tittle text-center mb-70">
-                <span>Our Professional Services</span>
-                <h3>Years Of Successful Work</h3>
-                <h1>25</h1>
-                <h3 style="color: goldenrod;">In The Market</h3>
+              <div class="section-tittle text-center mb-70" >
+                <div id="x" style="padding: 1rem;">
+
+                  <span class="hidden">Our Professional Services</span>
+                  <h3 class="hidden">Years Of Successful Work</h3>
+                  <h1 class="hidden">25</h1>
+                  <h3 class="hidden" style="color: white;">In The Market</h3>
+                </div>
               </div>
+              
             </div>
           </div>
           <div class="row">
