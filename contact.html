@@ -35,10 +35,17 @@
             // Change footer color to white for selected languages
             document.getElementById('footer_section_a').style.display = 'block'
             document.getElementById('footer_section_o').style.display = 'none'
+            var arabicMapLink ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14443.952738704667!2d55.2413349!3d25.1698768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ec8870daed%3A0xe7f755d4a39c5ef1!2sOasis%20Mall!5e0!3m2!1sen!2sin!4v1711334427441!5m2!1sen!2sin"
+            if(document.getElementById('map_frame').src!=arabicMapLink)
+            document.getElementById('map_frame').src=arabicMapLink
           } else {
+
+            var commonMapLink ="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2599.581747456903!2d11.020585076492369!3d49.341136871401694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDIwJzI4LjEiTiAxMcKwMDEnMjMuNCJF!5e0!3m2!1sen!2sin!4v1710454661957!5m2!1sen!2sin"
             // Change footer color to green for other languages
             document.getElementById('footer_section_a').style.display = 'none'
             document.getElementById('footer_section_o').style.display = 'block'
+            if(document.getElementById('map_frame').src!=commonMapLink)
+            document.getElementById('map_frame').  src=commonMapLink
           }
         }, 5000)
       }
@@ -143,6 +150,7 @@
               style="height: 480px; position: relative; overflow: hidden;"
             >
               <iframe
+              id="map_frame"
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2599.581747456903!2d11.020585076492369!3d49.341136871401694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDIwJzI4LjEiTiAxMcKwMDEnMjMuNCJF!5e0!3m2!1sen!2sin!4v1710454661957!5m2!1sen!2sin"
                 width="1200"
                 height="450"
