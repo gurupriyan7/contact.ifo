@@ -44,6 +44,16 @@
                     }
                   }, 5000)
                 }
+                                // Function to open the modal
+function openModal(imgElement) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imgElement.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
               </script>
                 <style>
                   iframe.skiptranslate { visibility: hidden !important; }
@@ -80,7 +90,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="GoldLeaf.html">Services</a></li>
                                     <li><a href="products.html">Gallery</a></li>
-                                    <li><a href="GoldLeafOriginals.html">GoldLeaf Originals</a></li>
+                                    <li><a href="GoldLeafOriginals.html">GoldLeaf Original</a></li>
                                     <li><a href="gallery.html">GoldLeaf Manufacturing</a></li>
                                     <li><a style="color: #c6a16e;" href="about.html">About Us</a></li>
                                     <!-- <li ><a href="About_Us.html">English</a>
@@ -121,6 +131,11 @@
         <div class="slider-area2">
             <div class="slider-height2 hero-overly d-flex align-items-center" data-background="assets/img/hero/original.jpg">
                 <div class="container">
+                  <div class="row justify-content-center">
+                    <div    id="myModal" class="modal3">
+                      <span  class="close" style="color: black;"  onclick="closeModal()">&times;</span>
+                      <img onclick="closeModal()"  class="modal-content" id="modalImg">
+                  </div>
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center pt-80">
@@ -237,7 +252,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/about_three.jpeg" style="height: 30rem;" alt="">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/about_three.jpeg" style="height: 30rem;" alt="">
                                 </div>
                                 <!-- <ul>
                                     <li class="black-bg">October 27, 2020</li>
@@ -255,88 +270,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/about_four.jpeg" style="height: 30rem;" alt="">
-                                </div>
-                                <!-- <ul>
-                                    <li class="black-bg">October 27, 2020</li>
-                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
-                                </ul> -->
-                                <div class="blog-cap">
-                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
-                                        Stuff in Kitchen.</a></h3> -->
-                                    <a href="blog_details.html" class="more-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/about_five.jpeg" style="height: 30rem;" alt="">
-                                </div>
-                                <!-- <ul>
-                                    <li class="black-bg">October 27, 2020</li>
-                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
-                                </ul> -->
-                                <div class="blog-cap">
-                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
-                                        Stuff in Kitchen.</a></h3> -->
-                                    <a href="blog_details.html" class="more-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/about_six.jpeg" style="height: 30rem;" alt="">
-                                </div>
-                                <!-- <ul>
-                                    <li class="black-bg">October 27, 2020</li>
-                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
-                                </ul> -->
-                                <div class="blog-cap">
-                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
-                                        Stuff in Kitchen.</a></h3> -->
-                                    <a href="blog_details.html" class="more-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/table_two.jpeg" style="height: 30rem;" alt="">
-                                </div>
-                                <!-- <ul>
-                                    <li class="black-bg">October 27, 2020</li>
-                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
-                                </ul> -->
-                                <div class="blog-cap">
-                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
-                                        Stuff in Kitchen.</a></h3> -->
-                                    <a href="blog_details.html" class="more-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/table_one.jpeg" style="height: 30rem;" alt="">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/about_four.jpeg" style="height: 30rem;" alt="">
                                 </div>
                                 <!-- <ul>
                                     <li class="black-bg">October 27, 2020</li>
@@ -358,7 +292,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/table_three.jpeg" style="height: 30rem;" alt="">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/about_five.jpeg" style="height: 30rem;" alt="">
                                 </div>
                                 <!-- <ul>
                                     <li class="black-bg">October 27, 2020</li>
@@ -376,7 +310,88 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img onclick="window.location.assign(this.src)" src="assets/img/gallery/table_four.jpeg" style="height: 30rem;" alt="">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/about_six.jpeg" style="height: 30rem;" alt="">
+                                </div>
+                                <!-- <ul>
+                                    <li class="black-bg">October 27, 2020</li>
+                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
+                                </ul> -->
+                                <div class="blog-cap">
+                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
+                                        Stuff in Kitchen.</a></h3> -->
+                                    <a href="blog_details.html" class="more-btn">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/table_two.jpeg" style="height: 30rem;" alt="">
+                                </div>
+                                <!-- <ul>
+                                    <li class="black-bg">October 27, 2020</li>
+                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
+                                </ul> -->
+                                <div class="blog-cap">
+                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
+                                        Stuff in Kitchen.</a></h3> -->
+                                    <a href="blog_details.html" class="more-btn">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/table_one.jpeg" style="height: 30rem;" alt="">
+                                </div>
+                                <!-- <ul>
+                                    <li class="black-bg">October 27, 2020</li>
+                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
+                                </ul> -->
+                                <div class="blog-cap">
+                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
+                                        Stuff in Kitchen.</a></h3> -->
+                                    <a href="blog_details.html" class="more-btn">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/table_three.jpeg" style="height: 30rem;" alt="">
+                                </div>
+                                <!-- <ul>
+                                    <li class="black-bg">October 27, 2020</li>
+                                    <li>By Admin   -   30 Likes   -   4 Comments</li>
+                                </ul> -->
+                                <div class="blog-cap">
+                                    <!-- <h3><a href="blog_details.html">16 Easy Ideas to Use Everyday
+                                        Stuff in Kitchen.</a></h3> -->
+                                    <a href="blog_details.html" class="more-btn">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img onclick="openModal(this)" src="assets/img/gallery/table_four.jpeg" style="height: 30rem;" alt="">
                                 </div>
                                 <!-- <ul>
                                     <li class="black-bg">October 27, 2020</li>

@@ -44,6 +44,17 @@
                     }
                   }, 5000)
                 }
+
+                                // Function to open the modal
+function openModal(imgElement) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imgElement.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
               </script>
                 <style>
                   iframe.skiptranslate { visibility: hidden !important; }
@@ -79,7 +90,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="GoldLeaf.html">Services</a></li>
                                     <li><a href="products.html">Gallery</a></li>
-                                    <li><a href="GoldLeafOriginals.html">GoldLeaf Originals</a></li>
+                                    <li><a href="GoldLeafOriginals.html">GoldLeaf Original</a></li>
                                     <li><a style="color: #c6a16e;" href="gallery.html">GoldLeaf Manufacturing</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <!-- <li ><a href="About_Us.html">English</a>
@@ -144,10 +155,15 @@
                     </div> -->
                 </div>
                 <div class="row">
+                  <div class="row justify-content-center">
+                    <div    id="myModal" class="modal2">
+                      <span  class="close" onclick="closeModal()">&times;</span>
+                      <img onclick="closeModal()"  class="modal-content" id="modalImg">
+                  </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200" >
                             <div class="services-img" >
-                                <img src="assets/img/gallery/galleryfirst.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/galleryfirst.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              
                              <div class="services-caption" >
@@ -162,7 +178,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part2.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part2.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 2</h5>
@@ -176,7 +192,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part3.jpg" onclick="window.location.assign(this.src)" style="height: 26rem;" alt="">
+                                <img src="assets/img/gallery/part3.jpg" onclick="openModal(this)" style="height: 26rem;" alt="">
                              </div>
                              <div class="services-caption" >
                                 <h5 style="color: goldenrod;">Step 3</h5>
@@ -190,7 +206,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part4.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part4.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 4</h5>
@@ -202,7 +218,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part5.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part5.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 5</h5>
@@ -215,7 +231,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part6.jpg" onclick="window.location.assign(this.src)" style="height: 24rem;" alt="">
+                                <img src="assets/img/gallery/part6.jpg" onclick="openModal(this)" style="height: 24rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 6</h5>
@@ -229,7 +245,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part7.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part7.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 7</h5>
@@ -241,7 +257,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part8.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part8.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 8</h5>
@@ -253,7 +269,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part9.jpg" onclick="window.location.assign(this.src)" style="height: 24rem;" alt="">
+                                <img src="assets/img/gallery/part9.jpg" onclick="openModal(this)" style="height: 24rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 9</h5>
@@ -265,7 +281,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part10.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part10.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 10</h5>
@@ -278,7 +294,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img src="assets/img/gallery/part112.jpg" onclick="window.location.assign(this.src)" style="height: 25rem;" alt="">
+                                <img src="assets/img/gallery/part112.jpg" onclick="openModal(this)" style="height: 25rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 11</h5>
@@ -290,7 +306,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200  ">
                             <div class="services-img">
-                                <img class="service-image-section" onclick="window.location.assign(this.src)" src="assets/img/gallery/part12.webp"  alt="">
+                                <img class="service-image-section" onclick="openModal(this)" src="assets/img/gallery/part12.webp"  alt="">
                              </div>
                              <div class="services-caption">
                                 <h5 style="color: goldenrod;">Step 12</h5>

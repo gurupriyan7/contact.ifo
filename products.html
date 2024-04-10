@@ -44,6 +44,17 @@
                     }
                   }, 5000)
                 }
+
+                                // Function to open the modal
+function openModal(imgElement) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imgElement.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
               </script>
               <style>
                      iframe.skiptranslate { visibility: hidden !important; }
@@ -80,7 +91,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="GoldLeaf.html">Services</a></li>
                                 <li><a style="color: #c6a16e;" href="products.html">Gallery</a></li>
-                                <li><a href="GoldLeafOriginals.html">GoldLeaf Originals</a></li>
+                                <li><a href="GoldLeafOriginals.html">GoldLeaf Original</a></li>
                                 <li><a href="gallery.html">GoldLeaf Manufacturing</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <!-- <li ><a href="About_Us.html">English</a>
@@ -133,6 +144,11 @@
         <!--? our info Start -->
         <div  class="our-info-area pt-170 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
             <div class="container" >
+              <div class="row justify-content-center">
+                <div    id="myModal" class="modal">
+                  <span  class="close" onclick="closeModal()">&times;</span>
+                  <img onclick="closeModal()"  class="modal-content" id="modalImg">
+              </div>
                 <div class="row justify-content-between" >
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-info mb-60" >
@@ -178,7 +194,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200" >
                             <div class="services-img" >
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_one.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_one.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption" >
                                 <h6 style="color: black;"> 24 carat colored panel prefabricated wall panels incl. customized color décor surface: glossy or matt 20 colors available where to protected surface</h6>
@@ -191,7 +207,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_two.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_two.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold panel prefabricated & made to measure wall panels for cladding wall design ready to fix protected surface glossy or matt 20 colors available  </h6>
@@ -204,7 +220,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_three.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_three.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption" >
                                 <h6 style="color: black;">24 carat embossed panel prefabricated & made to measure wall panels for cladding wall design ready to fix protected surface glossy or matt 20 colors available </h6>
@@ -217,7 +233,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_four.jpeg" style="height: 10rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_four.jpeg" style="height: 10rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h67 style="color: black;">24 carat waterproof panel prefabricated & made to measure wall panels 24 carat double gold behind 4/6 mm tempered glass and 3 mm aluminum board a light, transportable laminated panel, waterproof Surface: glossy 7 colors available</h6>
@@ -228,7 +244,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_five.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_five.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">gold with glass 24 carat gold mosaic made to measure (size starts from 2 x 2 cm) behind 4/6/8 mm (tempered) glass or gold between glass ready to fix Surface: glossy 7 colors available</h6>
@@ -240,7 +256,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_six.jpeg" style="height: 18rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_six.jpeg" style="height: 18rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold behind glass prefabricated & made to measure wall panels 24 carat double gold behind 6 mm tempered glass </h6>
@@ -253,7 +269,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_seven.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_seven.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;"> gold behind glass and colored gold 24 carat gold tiles made to measure 24 carat double gold behind 6 mm (tempered) glass ready to fix  </h6>
@@ -264,7 +280,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/m11.jpg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/m11.jpg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat wall paper self-adhesive wallpaper protected surface ready to use surface: glossy or matt 20 colors available </h6>
@@ -275,7 +291,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_nine.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_nine.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold wallpaper DESIGN customized décor or design self-adhesive wallpaper protected surface ready to use surface: glossy or matt 20 colors available </h6>
@@ -286,7 +302,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_ninez.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_ninez.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat ceiling panel prefabricated & made to measure ceiling panels ready to fix protected surface glossy or matt 20 colors available </h6>
@@ -299,7 +315,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_eleven.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_eleven.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold and platinum flooring customized décor or design behind / under 8 mm tempered glass made to measure 20 colors available </h6>
@@ -311,7 +327,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtynine.jpeg" style="height: 17rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtynine.jpeg" style="height: 17rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">salt shaker luxury soap with gold leaf sm</h6>
@@ -324,7 +340,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_tweleve.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_tweleve.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">laminated safety glass customized décor or design between 2 layers of 6 mm tempered glass </h6>
@@ -335,7 +351,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirteen.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirteen.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;">24 carat gold plated brick stone natural stone (granite, marble, limestone) 20 colors available different sizes </h6>
@@ -346,7 +362,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_fourteen.jpeg" style="height: 16.5rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_fourteen.jpeg" style="height: 16.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat gold plated counter glossy or matt 20 colors available </h6>
@@ -357,7 +373,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_fifteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_fifteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                               <h6 style="color: black;">mirror with gold plated décor stick on or sandblasted </h6>
@@ -368,7 +384,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_sixteen.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_sixteen.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">gold leaf on wood individual design made to measure surface: glossy, varnished 20 colors available </h6>
@@ -379,7 +395,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_seventeen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_seventeen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">furniture with 24 carat surface: glossy or matt 4 colors available </h6>
@@ -392,7 +408,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_eighteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_eighteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">acrylic glass panels with gold prefabricated & made to measure ceiling panels customized design / décor 6 / 8 / 12 / 20 mm thickness ready to fix surface: glossy 20 colors available </h6>
@@ -403,7 +419,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_nineteen.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_nineteen.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold behind glass prefabricated & made to measure glass items customized design / décor 6 / 8 / 12 / 20 mm thickness tempered glass surface: glossy 20 colors available </h6>
@@ -414,7 +430,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twenty.jpeg" style="height: 14rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_twenty.jpeg" style="height: 14rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat with MDF / PVC panel PVC panel or MDF board / wood panel made to measure prefabricated and ready to fix surface: glossy or matt 20 colors available protected surface also possible with colored gold! </h6>
@@ -425,7 +441,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentyone.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_twentyone.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">24 carat lettering lettering or names logos an information behind acrylic / tempered / laminated glass surface: glossy 20 colors available </h6>
@@ -436,7 +452,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentytwo.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_twentytwo.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                  <h6 style="color: black;">24 carat frame customized design / décor custom made size for different surfaces surface: glossy or matt 20 colors available </h6>
@@ -447,7 +463,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentythree.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_twentythree.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">laminated glass – gold tiles customized design / décor custom made size surface: glossy 20 colors available 
@@ -462,7 +478,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentysix.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_twentysix.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">stuff & items gold plated items surface: glossy 3 colors available   </h6>
@@ -473,7 +489,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                 <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_twentyseven.jpeg" style="height: 15rem;" alt="">
+                                 <img onclick="openModal(this)" src="assets/img/gallery/service_twentyseven.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">Gold behind acrylic glass made to measure surface: glossy 20 colors available</h6>
@@ -486,7 +502,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirty.jpeg" style="height: 12.5rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirty.jpeg" style="height: 12.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat lettering lettering or names logos an information behind acrylic / tempered / laminated glass surface: glossy 20 colors available </h6>
@@ -499,7 +515,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyone.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyone.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole glass or particularly </h6>
@@ -510,7 +526,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtytwo.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtytwo.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">gold application whole plate or particularly </h6>
@@ -521,7 +537,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyfour.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyfour.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole piece or particularly </h6>
@@ -532,7 +548,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyfive.jpeg" style="height: 15rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyfive.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">re-usable straws plated with 24 carat gold sustainable </h6>
@@ -543,7 +559,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="single-services mb-200">
                             <div class="services-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_thirtyeight.jpeg" style="height: 16rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyeight.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">hinge fittings bathroom faucet </h6>

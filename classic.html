@@ -31,6 +31,16 @@ function googleTranslateElementInit(){
         'google_translate_element'
     )
 }
+                // Function to open the modal
+                function openModal(imgElement) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imgElement.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
 
    </script>
      <style>
@@ -139,10 +149,15 @@ function googleTranslateElementInit(){
                 </div>
                 <div class="row">
                     <!-- single Tem -->
+                    <div class="row justify-content-center">
+                      <div    id="myModal" class="modal1">
+                        <span  class="close" onclick="closeModal()">&times;</span>
+                        <img onclick="closeModal()"  class="modal-content" id="modalImg">
+                    </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c1.webp" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c1.webp" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">Ceiling with 24 carat gold leaf</a></h6>
@@ -153,10 +168,10 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-" >
                         <div class="single-team mb-30" >
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)"  src="assets/img/gallery/c2.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)"  src="assets/img/gallery/c2.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption" >
-                                <h6><a href="#">Luxury private spa area</a></h6>
+                                <h6><a href="#">Premium private spa area</a></h6>
                                 <span></span>
                             </div>
                         </div>
@@ -164,7 +179,7 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/service_fourteen.jpeg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/service_fourteen.jpeg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">Luxury counters for outlets</a></h6>
@@ -184,7 +199,7 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c3.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c3.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">Classic luxury kitchen area</a></h6>
@@ -195,10 +210,10 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c4.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c4.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
-                                <h6><a href="#">Luxury bars and restaurant</a></h6>
+                                <h6><a href="#">Quality bars and restaurant</a></h6>
                                 <span></span>
                             </div>
                         </div>
@@ -206,10 +221,10 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c7.webp" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c7.webp" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
-                                <h6><a href="#">Luxury dining space</a></h6>
+                                <h6><a href="#">Superior dining space</a></h6>
                                 <span></span>
                             </div>
                         </div>
@@ -229,7 +244,7 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c8.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c8.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">Classic Royal palace interior</a></h6>
@@ -240,10 +255,10 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c6.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c6.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
-                                <h6><a href="#">Luxury living area</a></h6>
+                                <h6><a href="#">High-end living area</a></h6>
                                 <span></span>
                             </div>
                         </div>
@@ -251,10 +266,10 @@ function googleTranslateElementInit(){
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/c9.jpg" style="height: 20rem;" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/c9.jpg" style="height: 20rem;" alt="">
                             </div>
                             <div class="team-caption">
-                                <h6><a href="#">Classic majlis design</a></h6>
+                                <h6><a href="#">Classy majlis design</a></h6>
                                 <span></span>
                             </div>
                         </div>

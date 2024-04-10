@@ -1,374 +1,472 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Gold leaf</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.jpg">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gold leaf</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/logo.jpg"
+    />
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script>
-    
-function googleTranslateElementInit(){
-    new google.translate.TranslateElement(
-        {pageLanguage:'en'},
-        'google_translate_element'
-    )
-}
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
+          'google_translate_element',
+        )
 
-   </script>
-   <style>
-         iframe.skiptranslate { visibility: hidden !important; }
-   </style>
-   </head>
+        window.setInterval(function () {
+          // Get the selected language
+          var lang = document.querySelector('html').getAttribute('lang')
+          if (lang == 'ar') {
+            // Change footer color to white for selected languages
+            document.getElementById('footer_section_a').style.display = 'block'
+            document.getElementById('footer_section_o').style.display = 'none'
+          } else {
+            // Change footer color to green for other languages
+            document.getElementById('footer_section_a').style.display = 'none'
+            document.getElementById('footer_section_o').style.display = 'block'
+          }
+        }, 5000)
+      }
 
-   <body class="body-bg">
+      // Function to open the modal
+      function openModal(imgElement) {
+        document.getElementById('myModal').style.display = 'block'
+        document.getElementById('modalImg').src = imgElement.src
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById('myModal').style.display = 'none'
+      }
+    </script>
+    <style>
+      iframe.skiptranslate {
+        visibility: hidden !important;
+      }
+    </style>
+  </head>
+
+  <body class="body-bg">
     <!--? Preloader Start -->
-<div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="assets/img/logo/logo.jpg" alt="">
-            </div>
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/logo/logo.jpg" alt="" />
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<header>
-    <!-- Header Start -->
-    <div class="header-area header-transparent">
+    <header>
+      <!-- Header Start -->
+      <div class="header-area header-transparent">
         <div class="main-header header-sticky">
-            <div class="container-fluid">
-                <div class="menu-wrapper d-flex align-items-center justify-content-between">
-                    <!-- Logo -->
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="" ></a>
-                    </div>
-                    
-                    <!-- Main-menu -->
-                    <div class="main-menu f-right d-none d-lg-block">
-                        <nav>
-                            <ul id="navigation">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="GoldLeaf.html">Services</a></li>
-                                <li><a href="products.html">Gallery</a></li>
-                                <li><a href="GoldLeafOriginals.html">GoldLeaf Originals</a></li>
-                                <li><a href="gallery.html">GoldLeaf Manufacturing</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <!-- <li ><a href="About_Us.html">English</a>
+          <div class="container-fluid">
+            <div
+              class="menu-wrapper d-flex align-items-center justify-content-between"
+            >
+              <!-- Logo -->
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/img/logo/logo.jpg" alt="" />
+                </a>
+              </div>
+
+              <!-- Main-menu -->
+              <div class="main-menu f-right d-none d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="GoldLeaf.html">Services</a></li>
+                    <li><a href="products.html">Gallery</a></li>
+                    <li>
+                      <a href="GoldLeafOriginals.html">GoldLeaf Originals</a>
+                    </li>
+                    <li><a href="gallery.html">GoldLeaf Manufacturing</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- <li ><a href="About_Us.html">English</a>
                                     <ul class="submenu">
                                         <li><a href="blog.html">Arabic</a></li>
                                         <li><a href="blog_details.html">German</a></li>
                                         <li><a href="elements.html">Russian</a></li>
                                     </ul>
                                 </li> -->
-                                <li >
-                                    <!-- <select onchange="changeLanguage(this.value)"  id="button" onclick="alert('Button Clicked!')" style="margin-right: 22px;">
+                    <li>
+                      <!-- <select onchange="changeLanguage(this.value)"  id="button" onclick="alert('Button Clicked!')" style="margin-right: 22px;">
                                         <option value="en">English</option>
                                         <option value="fr">French</option>
                                       </select>  -->
-                                    <a  href="contact.html" >Contact Us</a>
-                                </li>  
-                            </ul>
-                            
-                        </nav>
-                      
-                    </div>          
-                    <!-- Header-btn -->
-                    <div sstyle="width: 3rem;margin-right: 7rem; margin-bottom: 2rem;" id="google_translate_element"></div>
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
-                    </div>
-                </div>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Header-btn -->
+              <div
+                sstyle="width: 3rem;margin-right: 7rem; margin-bottom: 2rem;"
+                id="google_translate_element"
+              ></div>
+              <!-- Mobile Menu -->
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Header End -->
+      </div>
+      <!-- Header End -->
     </header>
     <main>
-        <!--? Hero Start -->
-        <div class="slider-area2">
-            <div class="slider-height2 hero-overly d-flex align-items-center" data-background="assets/img/gallery/yatch.webp">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap hero-cap2 text-center pt-80">
-                                <img src="ssets/img/gallery/section_bg02.jpg" alt="">
-                                <h2>Yacht goldleaf design</h2>
-                            </div>
-                        </div>
-                    </div>
+      <!--? Hero Start -->
+      <div class="slider-area2">
+        <div
+          class="slider-height2 hero-overly d-flex align-items-center"
+          data-background="assets/img/gallery/yatch.webp"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="hero-cap hero-cap2 text-center pt-80">
+                  <img src="ssets/img/gallery/section_bg02.jpg" alt="" />
+                  <h2>Yacht goldleaf design</h2>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Hero End -->
-       
-        <!-- Team Start -->
-        <div class="team-area section-padding30">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="cl-xl-7 col-lg-8 col-md-10">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-70">
-                            
-                            <h2>YACHT GOLD LEAF DESIGN</h2>
-                            <span>Decorate your yacht  with gold leaf design .Customized and handcrafted high-end quality products with exclusive and classic design. Timeless and royal interiors for majestic yacht interiors with exclusive classy touch. Elegant and unique private jets interiors selected and produced by our skilled artisans for your exclusive project.</span>
-                            <hr style="color: gold;">   
-                            <h4 style="color: gold;">Sea water resistant </h4>
-                            <span>Decorate your yacht  with gold leaf design .Customized and handcrafted high-end quality products with exclusive and classic design. Timeless and royal interiors for majestic yacht interiors with exclusive classy touch. Elegant and unique private jets interiors selected and produced by our skilled artisans for your exclusive project.</span>
-                          
-                        </div> 
-                        <hr style="color: gold;">
-                    </div>
-                </div>
-               
+      </div>
+      <!-- Hero End -->
 
-                <div class="row">
-                    <!-- single Tem -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y1.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Luxury yacht living area</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y2dining.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Luxury yacht dining area</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y3living.jpeg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Modern yacht living space</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    
-                </div>
-
-
-
-
-                <div class="row">
-                    <!-- single Tem -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y4rest.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Yacht luxury rest room area</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y5bar.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Bars and restaurant area</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y6wall.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Yacht gold leaf custom wall crafts.</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    
-                </div>
-
-
-
-
-                <div class="row">
-                    <!-- single Tem -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y7ceilling.jpg"  style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Ceiling with 24 carat gold leaf</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y8bed.jpg" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Luxury bedroom area</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/y9interior.png" style="height: 20rem;" alt="">
-                            </div>
-                            <div class="team-caption">
-                                <h6><a href="#">Luxury exterior design</a></h6>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    
-                </div>
-
+      <!-- Team Start -->
+      <div class="team-area section-padding30">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="cl-xl-7 col-lg-8 col-md-10">
+              <!-- Section Tittle -->
+              <div class="section-tittle text-center mb-70">
+                <h2>YACHT GOLD LEAF DESIGN</h2>
+                <span>
+                  Decorate your yacht with gold leaf design .Customized and
+                  handcrafted high-end quality products with exclusive and
+                  classic design. Timeless and royal interiors for majestic
+                  yacht interiors with exclusive classy touch. Elegant and
+                  unique private jets interiors selected and produced by our
+                  skilled artisans for your exclusive project.
+                </span>
+                <hr style="color: gold;" />
+                <h4 style="color: gold;">Sea water resistant</h4>
+                <span>
+                  Decorate your yacht with gold leaf design .Customized and
+                  handcrafted high-end quality products with exclusive and
+                  classic design. Timeless and royal interiors for majestic
+                  yacht interiors with exclusive classy touch. Elegant and
+                  unique private jets interiors selected and produced by our
+                  skilled artisans for your exclusive project.
+                </span>
+              </div>
+              <hr style="color: gold;" />
             </div>
+          </div>
+
+          <div class="row">
+            <!-- single Tem -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div id="myModal" class="modal1">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img
+                  onclick="closeModal()"
+                  class="modal-content"
+                  id="modalImg"
+                />
+              </div>
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y1.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Luxury yacht living area</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y2dining.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Luxury yacht dining area</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y3living.jpeg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Modern yacht living space</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- single Tem -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y4rest.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Yacht luxury rest room area</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y5bar.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Bars and restaurant area</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                    onclick="openModal(this)"
+                    src="assets/img/gallery/y6wall.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Yacht gold leaf custom wall crafts.</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- single Tem -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                   onclick="openModal(this)"
+                    src="assets/img/gallery/y7ceilling.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Ceiling with 24 carat gold leaf</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                   onclick="openModal(this)"
+                    src="assets/img/gallery/y8bed.jpg"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Luxury bedroom area</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img
+                  onclick="openModal(this)"
+                    src="assets/img/gallery/y9interior.png"
+                    style="height: 20rem;"
+                    alt=""
+                  />
+                </div>
+                <div class="team-caption">
+                  <h6><a href="#">Luxury exterior design</a></h6>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Team End -->
-        <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
-            <div class="container">
-                <!-- Testimonial contents -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-10">
-                    <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap">
-                                    <img src="assets/img/gallery/testi-logo.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder  ">
-                                    <div class="founder-img">
-                                        <span><strong>Christine Eve</strong>   -   Co Founder</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap">
-                                    <img src="assets/img/gallery/testi-logo.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder  ">
-                                    <div class="founder-img">
-                                        <span><strong>Christine Eve</strong>   -   Co Founder</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      </div>
+      <!-- Team End -->
+      <!-- Testimonial Start -->
+      <div class="testimonial-area testimonial-padding">
+        <div class="container">
+          <!-- Testimonial contents -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-xl-8 col-lg-8 col-md-10">
+              <div class="h1-testimonial-active dot-style">
+                <!-- Single Testimonial -->
+                <div class="single-testimonial text-center">
+                  <!-- Testimonial Content -->
+                  <div class="testimonial-caption">
+                    <div class="testimonial-top-cap">
+                      <img src="assets/img/gallery/testi-logo.png" alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                      </p>
                     </div>
+                    <!-- founder -->
+                    <div class="testimonial-founder">
+                      <div class="founder-img">
+                        <span>
+                          <strong>Christine Eve</strong>
+                          - Co Founder
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- Single Testimonial -->
+                <div class="single-testimonial text-center">
+                  <!-- Testimonial Content -->
+                  <div class="testimonial-caption">
+                    <div class="testimonial-top-cap">
+                      <img src="assets/img/gallery/testi-logo.png" alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                      </p>
+                    </div>
+                    <!-- founder -->
+                    <div class="testimonial-founder">
+                      <div class="founder-img">
+                        <span>
+                          <strong>Christine Eve</strong>
+                          - Co Founder
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        <!-- Testimonial End -->
-        <!-- Brand Area Start -->
-        <div class="brand-area pt-120 pb-120">
-            <div class="container">
-                <div class="brand-active brand-border pt-50 pb-40">
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand1.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand3.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand4.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand5.png" alt="">
-                    </div>
-                </div>
+      </div>
+      <!-- Testimonial End -->
+      <!-- Brand Area Start -->
+      <div class="brand-area pt-120 pb-120">
+        <div class="container">
+          <div class="brand-active brand-border pt-50 pb-40">
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand1.png" alt="" />
             </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand2.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand3.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand4.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand2.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand5.png" alt="" />
+            </div>
+          </div>
         </div>
-        <!-- Brand Area End -->
-        <!-- Want To work -->
-        <section class="wantToWork-area w-padding2">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-8 col-lg-8 col-md-8">
-                        <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Are you Searching For a First-Class Consultant?</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <a href="#" class="btn btn-black f-right">Contact Us</a>
-                    </div>
-                </div>
+      </div>
+      <!-- Brand Area End -->
+      <!-- Want To work -->
+      <section class="wantToWork-area w-padding2">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+              <div class="wantToWork-caption wantToWork-caption2">
+                <h2>Are you Searching For a First-Class Consultant?</h2>
+              </div>
             </div>
-        </section>
-        <!-- Want To work End -->
-     
-
+            <div class="col-xl-2 col-lg-2 col-md-3">
+              <a href="#" class="btn btn-black f-right">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Want To work End -->
     </main>
     <footer>
-        <!--? Footer Start-->
       <!--? Footer Start-->
-      <div class="footer-area footer-bg" id="footer_section_a" style="display: none;">
+      <div
+        class="footer-area footer-bg"
+        id="footer_section_a"
+        style="display: none;"
+      >
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -411,7 +509,8 @@ function googleTranslateElementInit(){
                         ></i>
                         + 971
                       </span>
-58 596 4561                    </h4>
+                      58 596 4561
+                    </h4>
 
                     <p>www.goldleaf-gmbh.com</p>
                     <p>mail@goldleaf-gmbh.com</p>
@@ -424,13 +523,13 @@ function googleTranslateElementInit(){
                     <h4>Useful Links</h4>
                   </div>
                   <!-- <div class="footer-cap">
-                                <span>Dubai</span>
-                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                                </p>
-                            </div> -->
+                               <span>Dubai</span>
+                               <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                               </p>
+                           </div> -->
                   <div class="footer-cap">
                     <span>Dubai</span>
-                    <p> Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
+                    <p>Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
                   </div>
                 </div>
               </div>
@@ -616,7 +715,6 @@ function googleTranslateElementInit(){
                       9122 18 99 210
                     </h4>
 
-                  
                     <p>www.goldleaf-gmbh.com</p>
                     <p>mail@goldleaf-gmbh.com</p>
                   </div>
@@ -628,10 +726,10 @@ function googleTranslateElementInit(){
                     <h4>Useful Links</h4>
                   </div>
                   <!-- <div class="footer-cap">
-                                <span>Dubai</span>
-                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                                </p>
-                            </div> -->
+                               <span>Dubai</span>
+                               <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                               </p>
+                           </div> -->
                   <div class="footer-cap">
                     <span>Germany</span>
                     <p>91126 Schwach Germany</p>
@@ -650,7 +748,8 @@ function googleTranslateElementInit(){
                   <form
                     class="form-contact contact_form"
                     id="submit-form-a"
-                    action=""l
+                    action=""
+                    l
                   >
                     <div class="row">
                       <div class="col-12">
@@ -775,45 +874,43 @@ function googleTranslateElementInit(){
         </div>
       </div>
       <!-- Footer End-->
-          <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    <div id="back-top">
+      <a title="Go to Top" href="#"><i class="fas fa-level-up-alt"></i></a>
     </div>
 
     <!-- JS here -->
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-		<!-- Nice-select, sticky -->
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
-        
-    </body>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

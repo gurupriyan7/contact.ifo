@@ -44,6 +44,17 @@
                     }
                   }, 5000)
                 }
+
+                // Function to open the modal
+function openModal(imgElement) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imgElement.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
               </script>
                 <style>
                   iframe.skiptranslate { visibility: hidden !important; }
@@ -80,7 +91,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a style="color: #c6a16e;" href="GoldLeaf.html">Services</a></li>
                                 <li><a href="products.html">Gallery</a></li>
-                                <li><a href="GoldLeafOriginals.html">GoldLeaf Originals</a></li>
+                                <li><a href="GoldLeafOriginals.html">GoldLeaf Original</a></li>
                                 <li><a href="gallery.html">GoldLeaf Manufacturing</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <!-- <li ><a href="About_Us.html">English</a>
@@ -168,6 +179,10 @@
         <div class="team-area section-padding30">
             <div class="container">
                 <div class="row justify-content-center">
+                  <div    id="myModal" class="modal">
+                    <span  class="close" onclick="closeModal()">&times;</span>
+                    <img onclick="closeModal()"  class="modal-content" id="modalImg">
+                </div>
                     <div class="cl-xl-7 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
@@ -181,7 +196,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_one.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_one.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">MADE OF REAL 24 CARAT GOLD LEAF HANDCRAFTED</a></h6>
@@ -192,7 +207,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-" >
                         <div class="single-team mb-30" >
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)"  src="assets/img/gallery/goldleaf_two.jpeg" alt="">
+                                <img onclick="openModal(this)"  src="assets/img/gallery/goldleaf_two.jpeg" alt="">
                             </div>
                             <div class="team-caption" >
                                 <h6><a href="#">CREATING GENUINE GOLD SURFACES AND FINISHED PRODUCTS LIKE FURNITURE WITH GOLD ORNAMENTS</a></h6>
@@ -203,7 +218,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_three.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_three.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">22 DIFFERENT COLURS - GLOSSY & MATT</a></h6>
@@ -219,7 +234,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_four.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_four.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">UNIQUE PANELS WITH 24 CARAT GOLD - READY FOR INSTALLATION</a></h6>
@@ -230,7 +245,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_five.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_five.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">CEILING DECORATION</a></h6>
@@ -241,7 +256,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_six.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_six.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">UNIQUE GOLD AND PLATINUM PANELS SCRATCH RESISTAND / CUSTOM MADE - READY FOR INSTALLATION</a></h6>
@@ -261,7 +276,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_seven.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_seven.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">WALL DECORATION 24 CARAT</a></h6>
@@ -272,7 +287,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_eight.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_eight.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">PRIVATE SPA GOLD TILES</a></h6>
@@ -283,7 +298,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_nine.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_nine.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">24 CARAT WATERPROOFED SHOWER GLASS PANELS</a></h6>
@@ -306,7 +321,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_ten.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_ten.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">24 CARAT TILES</a></h6>
@@ -317,7 +332,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_eleven.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_eleven.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">INTERIOR DESIGN</a></h6>
@@ -328,7 +343,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_twelve.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_twelve.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">PRE FABRICATED PANELS WITH 24 CARAT</a></h6>
@@ -351,7 +366,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_thirteen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_thirteen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">CROCO WALL PANELS</a></h6>
@@ -362,7 +377,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_fourteen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_fourteen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">EXCLUSIVE SAFE WITH 24 CARAT SURFACE</a></h6>
@@ -373,7 +388,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_fifteen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_fifteen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">YACHT INTERIOR DESIGN CAR DESIGN</a></h6>
@@ -396,7 +411,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_sixteen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_sixteen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">CEILING DECORATION / GOLD WALLPAPER</a></h6>
@@ -407,7 +422,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_seventeen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_seventeen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">EXAMPLES</a></h6>
@@ -418,7 +433,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img onclick="window.location.assign(this.src)" src="assets/img/gallery/goldleaf_eighteen.jpeg" alt="">
+                                <img onclick="openModal(this)" src="assets/img/gallery/goldleaf_eighteen.jpeg" alt="">
                             </div>
                             <div class="team-caption">
                                 <h6><a href="#">EXAMPLES CROCO BY GOLD LEAF</a></h6>
