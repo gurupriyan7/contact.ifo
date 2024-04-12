@@ -25,12 +25,26 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
    <script>
     
-function googleTranslateElementInit(){
-    new google.translate.TranslateElement(
-        {pageLanguage:'en'},
-        'google_translate_element'
-    )
-}
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
+          'google_translate_element',
+        )
+
+        window.setInterval(function () {
+          // Get the selected language
+          var lang = document.querySelector('html').getAttribute('lang')
+          if (lang == 'de') {
+            // Change footer color to white for selected languages
+            document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('footer_section_a').style.display = 'none'
+          } else  {
+            // Change footer color to green for other languages
+            document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('footer_section_a').style.display = 'block'
+          }
+        }, 5000)
+      }
                 // Function to open the modal
                 function openModal(imgElement) {
     document.getElementById("myModal").style.display = "block";
@@ -68,7 +82,8 @@ function closeModal() {
                 <div class="menu-wrapper d-flex align-items-center justify-content-between">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="" ></a>
+                        <a href="index.html">
+                          <img style="width: 4rem;height: 4rem;" src="assets/img/logo/logo.jpg" alt="" /></a>
                     </div>
                     
                     <!-- Main-menu -->
@@ -138,7 +153,7 @@ function closeModal() {
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
                             
-                            <h2>CLASSIC GOLD LEAF</h2>
+                            <h2>CLASSIC GOLD LEAF DESIGN</h2>
                             <span>Decorate your project with the most elegant and luxurious elements: high-end quality and custom-made solutions. Fit out, furniture design and production 100% in Italy with classic French style and traditional baroque design. Personalize your project with precious selected materials for a special and majestic project.
                                 -Restuarant and bars 
                                 -corporate office</span>
@@ -285,21 +300,21 @@ function closeModal() {
         </div>
         <!-- Team End -->
         <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
+        <!-- <div class="testimonial-area testimonial-padding">
             <div class="container">
-                <!-- Testimonial contents -->
+                
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
+                       
                         <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
+                           
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
                                     <img src="assets/img/gallery/testi-logo.png" alt="">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                                 </div>
-                                <!-- founder -->
+                               
                                 <div class="testimonial-founder  ">
                                     <div class="founder-img">
                                         <span><strong>Christine Eve</strong>   -   Co Founder</span>
@@ -307,15 +322,15 @@ function closeModal() {
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
+                    
                         <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
+                         
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
                                     <img src="assets/img/gallery/testi-logo.png" alt="">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                                 </div>
-                                <!-- founder -->
+                                
                                 <div class="testimonial-founder  ">
                                     <div class="founder-img">
                                         <span><strong>Christine Eve</strong>   -   Co Founder</span>
@@ -327,10 +342,10 @@ function closeModal() {
                 </div>
             </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
         <!-- Brand Area Start -->
-        <div class="brand-area pt-120 pb-120">
+        <!-- <div class="brand-area pt-120 pb-120">
             <div class="container">
                 <div class="brand-active brand-border pt-50 pb-40">
                     <div class="single-brand">
@@ -353,10 +368,10 @@ function closeModal() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Brand Area End -->
         <!-- Want To work -->
-        <section class="wantToWork-area w-padding2">
+        <!-- <section class="wantToWork-area w-padding2">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-8 col-lg-8 col-md-8">
@@ -369,14 +384,14 @@ function closeModal() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Want To work End -->
      
 
     </main>
     <footer>
-      <!--? Footer Start-->
-      <div class="footer-area footer-bg" id="footer_section_a" style="display: none;">
+       <!--? Footer Start-->
+       <div class="footer-area footer-bg" id="footer_section_a" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -578,7 +593,7 @@ function closeModal() {
           </div>
         </div>
       </div>
-      <div class="footer-area footer-bg" id="footer_section_o">
+      <div class="footer-area footer-bg" id="footer_section_o" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -602,16 +617,7 @@ function closeModal() {
                     </div>
                   </div>
                   <div class="footer-number">
-                    <h4>
-                      <span>
-                        <i
-                          class="fab fa-whatsapp"
-                          style="margin-right: 10px;"
-                        ></i>
-                        + 49
-                      </span>
-                      179 979 45 01
-                    </h4>
+                   
                     <h4>
                       <span>
                         <i
@@ -642,7 +648,14 @@ function closeModal() {
                             </div> -->
                   <div class="footer-cap">
                     <span>Germany</span>
-                    <p>91126 Schwach Germany</p>
+                    <p>Gold Leaf AP GmbH
+                      Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                      </p>
+                      <br>
+                      <span>Trading license: Nuremberg, HRB 36197
+                        VAT-ID: DE 323068388
+                        Tax-ID: 241 / 127 / 61043
+                        </span>
                   </div>
                 </div>
               </div>

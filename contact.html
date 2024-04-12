@@ -31,23 +31,24 @@
         window.setInterval(function () {
           // Get the selected language
           var lang = document.querySelector('html').getAttribute('lang')
-          if (lang == 'ar') {
+          if (lang == 'de') {
             // Change footer color to white for selected languages
-            document.getElementById('footer_section_a').style.display = 'block'
-            document.getElementById('footer_section_o').style.display = 'none'
-            document.getElementById('contact_sub_a').style.display = 'block'
-            document.getElementById('contact_sub_o').style.display = 'none'
-            var arabicMapLink ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14443.952738704667!2d55.2413349!3d25.1698768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ec8870daed%3A0xe7f755d4a39c5ef1!2sOasis%20Mall!5e0!3m2!1sen!2sin!4v1711334427441!5m2!1sen!2sin"
+            document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('footer_section_a').style.display = 'none'
+            document.getElementById('contact_sub_o').style.display = 'block'
+            document.getElementById('contact_sub_a').style.display = 'none'
+            
+            var commonMapLink ="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2599.581747456903!2d11.020585076492369!3d49.341136871401694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDIwJzI4LjEiTiAxMcKwMDEnMjMuNCJF!5e0!3m2!1sen!2sin!4v1710454661957!5m2!1sen!2sin"
             if(document.getElementById('map_frame').src!=arabicMapLink)
             document.getElementById('map_frame').src=arabicMapLink
           } else {
 
-            var commonMapLink ="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2599.581747456903!2d11.020585076492369!3d49.341136871401694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDIwJzI4LjEiTiAxMcKwMDEnMjMuNCJF!5e0!3m2!1sen!2sin!4v1710454661957!5m2!1sen!2sin"
+            var arabicMapLink ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14443.952738704667!2d55.2413349!3d25.1698768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ec8870daed%3A0xe7f755d4a39c5ef1!2sOasis%20Mall!5e0!3m2!1sen!2sin!4v1711334427441!5m2!1sen!2sin"
             // Change footer color to green for other languages
-            document.getElementById('footer_section_a').style.display = 'none'
-            document.getElementById('footer_section_o').style.display = 'block'
-            document.getElementById('contact_sub_a').style.display = 'none'
-            document.getElementById('contact_sub_o').style.display = 'block'
+            document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('footer_section_a').style.display = 'block'
+            document.getElementById('contact_sub_o').style.display = 'none'
+            document.getElementById('contact_sub_a').style.display = 'block'
             if(document.getElementById('map_frame').src!=commonMapLink)
             document.getElementById('map_frame').  src=commonMapLink
           }
@@ -82,7 +83,7 @@
               <!-- Logo -->
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/img/logo/logo.jpg" alt="" />
+                  <img style="width: 4rem;height: 4rem;" src="assets/img/logo/logo.jpg" alt="" />
                 </a>
               </div>
 
@@ -336,7 +337,15 @@
                 <span class="contact-info__icon"><i class="ti-home"></i></span>
                 <div class="media-body">
                   <h3>Germany</h3>
-                  <p>91126 Schwach Germany</p>
+                  <p>Gold Leaf AP GmbH
+                    Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                    </p>
+                    <span>
+                      Trading license: Nuremberg, HRB 36197
+VAT-ID: DE 323068388
+Tax-ID: 241 / 127 / 61043
+
+                    </span>
                 </div>
               </div>
               <div class="media contact-info">
@@ -345,7 +354,7 @@
                 </span>
                 <div class="media-body">
                   <h3>+49 9122 18 99 210</h3>
-                  <h3>+49 179 979 45 01</h3>
+                  
                   <p>Mon to Fri 9am to 6pm</p>
                 </div>
               </div>
@@ -364,7 +373,7 @@
     </main>
     <footer>
             <!--? Footer Start-->
-            <div class="footer-area footer-bg" id="footer_section_a">
+            <div class="footer-area footer-bg" id="footer_section_a" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
               <h1 id="hello"></h1>
               <div class="container">
                 <div class="footer-top footer-padding">
@@ -434,7 +443,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
                       <div class="single-footer-caption mb-50">
                         <div class="footer-tittle">
-                          <h4>Instagram Feed</h4>
+                          <h4>News Feed</h4>
                         </div>
                         <div class="instagram-gellay">
                           <ul class="insta-feed">
@@ -508,7 +517,7 @@
                 </div>
               </div>
             </div>
-            <div class="footer-area footer-bg" id="footer_section_o">
+            <div class="footer-area footer-bg" id="footer_section_o" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
               <h1 id="hello"></h1>
               <div class="container">
                 <div class="footer-top footer-padding">
@@ -532,17 +541,7 @@
                           </div>
                         </div>
                         <div class="footer-number">
-                          <h4>
-                            <span>
-                              <i
-                                class="fab fa-whatsapp"
-                                style="margin-right: 10px;"
-                              ></i>
-                              + 49
-                            </span>
-                            179 979 45 01
-                          </h4>
-                          <h4>
+                         
                             <span>
                               <i
                                 class="fa fa-phone"
@@ -572,7 +571,15 @@
                                   </div> -->
                         <div class="footer-cap">
                           <span>Germany</span>
-                          <p>91126 Schwach Germany</p>
+                          <p>Gold Leaf AP GmbH
+                            Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                            </p>
+                            <span>
+                              Trading license: Nuremberg, HRB 36197
+VAT-ID: DE 323068388
+Tax-ID: 241 / 127 / 61043
+
+                            </span>
                         </div>
                       </div>
                     </div>

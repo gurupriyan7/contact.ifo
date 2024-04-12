@@ -28,7 +28,7 @@
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      function googleTranslateElementInit() {
+         function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
           'google_translate_element',
@@ -37,14 +37,14 @@
         window.setInterval(function () {
           // Get the selected language
           var lang = document.querySelector('html').getAttribute('lang')
-          if (lang == 'ar') {
+          if (lang == 'de') {
             // Change footer color to white for selected languages
-            document.getElementById('footer_section_a').style.display = 'block'
-            document.getElementById('footer_section_o').style.display = 'none'
-          } else {
-            // Change footer color to green for other languages
-            document.getElementById('footer_section_a').style.display = 'none'
             document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('footer_section_a').style.display = 'none'
+          } else  {
+            // Change footer color to green for other languages
+            document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('footer_section_a').style.display = 'block'
           }
         }, 5000)
       }
@@ -90,7 +90,7 @@
               <!-- Logo -->
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/img/logo/logo.jpg" alt="" />
+                  <img style="width: 4rem;height: 4rem;" src="assets/img/logo/logo.jpg" alt="" />
                 </a>
               </div>
 
@@ -227,7 +227,7 @@
                   />
                 </div>
                 <div class="team-caption">
-                  <h6><a href="#">Luxury yacht dining area</a></h6>
+                  <h6><a href="#">Premium yacht dining area</a></h6>
                   <span></span>
                 </div>
               </div>
@@ -263,7 +263,7 @@
                   />
                 </div>
                 <div class="team-caption">
-                  <h6><a href="#">Yacht luxury rest room area</a></h6>
+                  <h6><a href="#">Yacht Exclusive  rest room area</a></h6>
                   <span></span>
                 </div>
               </div>
@@ -279,7 +279,7 @@
                   />
                 </div>
                 <div class="team-caption">
-                  <h6><a href="#">Bars and restaurant area</a></h6>
+                  <h6><a href="#">High end bars and restaurant area</a></h6>
                   <span></span>
                 </div>
               </div>
@@ -347,7 +347,7 @@
                   />
                 </div>
                 <div class="team-caption">
-                  <h6><a href="#">Luxury exterior design</a></h6>
+                  <h6><a href="#">Premium exterior design</a></h6>
                   <span></span>
                 </div>
               </div>
@@ -357,15 +357,15 @@
       </div>
       <!-- Team End -->
       <!-- Testimonial Start -->
-      <div class="testimonial-area testimonial-padding">
+      <!-- <div class="testimonial-area testimonial-padding">
         <div class="container">
-          <!-- Testimonial contents -->
+        
           <div class="row d-flex justify-content-center">
             <div class="col-xl-8 col-lg-8 col-md-10">
               <div class="h1-testimonial-active dot-style">
-                <!-- Single Testimonial -->
+              
                 <div class="single-testimonial text-center">
-                  <!-- Testimonial Content -->
+                 
                   <div class="testimonial-caption">
                     <div class="testimonial-top-cap">
                       <img src="assets/img/gallery/testi-logo.png" alt="" />
@@ -376,7 +376,7 @@
                         nostrud exercitation ullamco laboris nisi ut aliquip
                       </p>
                     </div>
-                    <!-- founder -->
+                   
                     <div class="testimonial-founder">
                       <div class="founder-img">
                         <span>
@@ -387,9 +387,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- Single Testimonial -->
+               
                 <div class="single-testimonial text-center">
-                  <!-- Testimonial Content -->
+                  
                   <div class="testimonial-caption">
                     <div class="testimonial-top-cap">
                       <img src="assets/img/gallery/testi-logo.png" alt="" />
@@ -400,7 +400,7 @@
                         nostrud exercitation ullamco laboris nisi ut aliquip
                       </p>
                     </div>
-                    <!-- founder -->
+                  
                     <div class="testimonial-founder">
                       <div class="founder-img">
                         <span>
@@ -415,10 +415,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Testimonial End -->
       <!-- Brand Area Start -->
-      <div class="brand-area pt-120 pb-120">
+      <!-- <div class="brand-area pt-120 pb-120">
         <div class="container">
           <div class="brand-active brand-border pt-50 pb-40">
             <div class="single-brand">
@@ -441,10 +441,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Brand Area End -->
       <!-- Want To work -->
-      <section class="wantToWork-area w-padding2">
+      <!-- <section class="wantToWork-area w-padding2">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-8 col-lg-8 col-md-8">
@@ -457,16 +457,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Want To work End -->
     </main>
     <footer>
-      <!--? Footer Start-->
-      <div
-        class="footer-area footer-bg"
-        id="footer_section_a"
-        style="display: none;"
-      >
+       <!--? Footer Start-->
+       <div class="footer-area footer-bg" id="footer_section_a" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -509,8 +505,7 @@
                         ></i>
                         + 971
                       </span>
-                      58 596 4561
-                    </h4>
+58 596 4561                    </h4>
 
                     <p>www.goldleaf-gmbh.com</p>
                     <p>mail@goldleaf-gmbh.com</p>
@@ -523,13 +518,13 @@
                     <h4>Useful Links</h4>
                   </div>
                   <!-- <div class="footer-cap">
-                               <span>Dubai</span>
-                               <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                               </p>
-                           </div> -->
+                                <span>Dubai</span>
+                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                                </p>
+                            </div> -->
                   <div class="footer-cap">
                     <span>Dubai</span>
-                    <p>Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
+                    <p> Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
                   </div>
                 </div>
               </div>
@@ -669,7 +664,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-area footer-bg" id="footer_section_o">
+      <div class="footer-area footer-bg" id="footer_section_o" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -693,16 +688,7 @@
                     </div>
                   </div>
                   <div class="footer-number">
-                    <h4>
-                      <span>
-                        <i
-                          class="fab fa-whatsapp"
-                          style="margin-right: 10px;"
-                        ></i>
-                        + 49
-                      </span>
-                      179 979 45 01
-                    </h4>
+                   
                     <h4>
                       <span>
                         <i
@@ -715,6 +701,7 @@
                       9122 18 99 210
                     </h4>
 
+                  
                     <p>www.goldleaf-gmbh.com</p>
                     <p>mail@goldleaf-gmbh.com</p>
                   </div>
@@ -726,13 +713,20 @@
                     <h4>Useful Links</h4>
                   </div>
                   <!-- <div class="footer-cap">
-                               <span>Dubai</span>
-                               <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                               </p>
-                           </div> -->
+                                <span>Dubai</span>
+                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                                </p>
+                            </div> -->
                   <div class="footer-cap">
                     <span>Germany</span>
-                    <p>91126 Schwach Germany</p>
+                    <p>Gold Leaf AP GmbH
+                      Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                      </p>
+                      <br>
+                      <span>Trading license: Nuremberg, HRB 36197
+                        VAT-ID: DE 323068388
+                        Tax-ID: 241 / 127 / 61043
+                        </span>
                   </div>
                 </div>
               </div>
@@ -748,8 +742,7 @@
                   <form
                     class="form-contact contact_form"
                     id="submit-form-a"
-                    action=""
-                    l
+                    action=""l
                   >
                     <div class="row">
                       <div class="col-12">

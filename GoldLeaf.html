@@ -25,25 +25,25 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
                 function googleTranslateElementInit() {
-                  new google.translate.TranslateElement(
-                    { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
-                    'google_translate_element',
-                  )
-          
-                  window.setInterval(function () {
-                    // Get the selected language
-                    var lang = document.querySelector('html').getAttribute('lang')
-                    if (lang == 'ar') {
-                      // Change footer color to white for selected languages
-                      document.getElementById('footer_section_a').style.display = 'block'
-                      document.getElementById('footer_section_o').style.display = 'none'
-                    } else {
-                      // Change footer color to green for other languages
-                      document.getElementById('footer_section_a').style.display = 'none'
-                      document.getElementById('footer_section_o').style.display = 'block'
-                    }
-                  }, 5000)
-                }
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
+          'google_translate_element',
+        )
+
+        window.setInterval(function () {
+          // Get the selected language
+          var lang = document.querySelector('html').getAttribute('lang')
+          if (lang == 'de') {
+            // Change footer color to white for selected languages
+            document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('footer_section_a').style.display = 'none'
+          } else  {
+            // Change footer color to green for other languages
+            document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('footer_section_a').style.display = 'block'
+          }
+        }, 5000)
+      }
 
                 // Function to open the modal
 function openModal(imgElement) {
@@ -81,7 +81,9 @@ function closeModal() {
                 <div class="menu-wrapper d-flex align-items-center justify-content-between">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="" ></a>
+                        <a href="index.html">
+                          <img style="width: 4rem;height: 4rem;" src="assets/img/logo/logo.jpg" alt="" />
+                        </a>
                     </div>
                     
                     <!-- Main-menu -->
@@ -142,39 +144,39 @@ function closeModal() {
             </div>
         </div>
         <!-- Hero End -->
-        <!--? our info Start -->
-        <div  class="our-info-area pt-170 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-info mb-60">
-                            <div class="info-caption">
-                                <h4>Consultation</h4>
-                                <p>All services can be tailored to the needs of our clients. Reach out to us to schedule your consultation. In-person or virtual meetings are available. </p>
-                            </div>
+      
+       <!--? our info Start -->
+       <div  class="our-info-area pt-170 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
+        <div class="container" >
+            <div class="row justify-content-between" >
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-info mb-60" >
+                        <div class="info-caption">
+                            <h4>MADE OF GOLD LEAF</h4>
+                            <p> Pure gold leaf is an almost impalpable layer of precious metal, obtained by subjecting an ingot to 10 processing phases.  </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-info mb-60">
-                            <div class="info-caption">
-                                <h4>Design & Décor</h4>
-                                <p>You don't need to lift a finger. We will develop the concept, material, and textures for your interior design, to optimize your space and unique floor plan. </p>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-info mb-60">
+                        <div class="info-caption">
+                            <h4>HANDWORK</h4>
+                            <p> Its production requires exceptional craftsmanship and in-depth knowledge of the secrets of an ancient craft, which is constantly evolving.</p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-info mb-60">
-                            <div class="info-caption">
-                                <h4>Personalized design</h4>
-                                <p>Each client is unique hence ‘The Gold Leaf’ gives no preset designs, only personalized designs for our clients. </p>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-info mb-60">
+                        <div class="info-caption">
+                            <h4>SELF ADHESIVE GOLD</h4>
+                            <p>This is a method for applying gold leaf with an external adhesive material.Goldleaf will bond the target by its own. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Our Info start -->
-       
+    </div>
+    <!-- Our Info start -->
         <!-- Team Start -->
         <div class="team-area section-padding30">
             <div class="container">
@@ -452,21 +454,21 @@ function closeModal() {
         </div>
         <!-- Team End -->
         <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
+        <!-- <div class="testimonial-area testimonial-padding">
             <div class="container">
-                <!-- Testimonial contents -->
+               
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
+                       
                         <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
+                           
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
                                     <img src="assets/img/gallery/testi-logo.png" alt="">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                                 </div>
-                                <!-- founder -->
+                               
                                 <div class="testimonial-founder  ">
                                     <div class="founder-img">
                                         <span><strong>Christine Eve</strong>   -   Co Founder</span>
@@ -474,15 +476,15 @@ function closeModal() {
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
+                       
                         <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
+                           
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
                                     <img src="assets/img/gallery/testi-logo.png" alt="">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                                 </div>
-                                <!-- founder -->
+                             
                                 <div class="testimonial-founder  ">
                                     <div class="founder-img">
                                         <span><strong>Christine Eve</strong>   -   Co Founder</span>
@@ -494,10 +496,10 @@ function closeModal() {
                 </div>
             </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
     <!-- Hero End -->
-    <div class="brand-area pt-120 pb-120">
+    <!-- <div class="brand-area pt-120 pb-120">
         <div class="row">
             <div class="col-xl-12">
                 <div class="hero-cap hero-cap2 text-center pt-80">
@@ -528,10 +530,10 @@ function closeModal() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Brand Area End -->
         <!-- Want To work -->
-        <section class="wantToWork-area w-padding2">
+        <!-- <section class="wantToWork-area w-padding2">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-8 col-lg-8 col-md-8">
@@ -544,420 +546,418 @@ function closeModal() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Want To work End -->
      
 
     </main>
     <footer>
          <!--? Footer Start-->
-         <div class="footer-area footer-bg" id="footer_section_a" style="display: none;">
-          <h1 id="hello"></h1>
-          <div class="container">
-            <div class="footer-top footer-padding">
-              <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
-                  <div class="single-footer-caption mb-50">
-                    <!-- logo -->
-                    <div class="footer-logo">
-                      <a href="index.html">
-                        <img
-                          style="height: 3rem;"
-                          src="assets/img/logo/logo 2.footer.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h6>goldleaf</h6>
-                    </div>
-                    <div class="footer-tittle">
-                      <div class="footer-pera">
-                        <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
-                      </div>
-                    </div>
-                    <div class="footer-number">
-                      <h4>
-                        <span>
-                          <i
-                            class="fab fa-whatsapp"
-                            style="margin-right: 10px;"
-                          ></i>
-                          + 971
-                        </span>
-                        50 890 6949
-                      </h4>
-                      <h4>
-                        <span>
-                          <i
-                            class="fa fa-phone"
-                            style="margin-right: 10px;"
-                            aria-hidden="true"
-                          ></i>
-                          + 971
-                        </span>
-  58 596 4561                    </h4>
-  
-                      <p>www.goldleaf-gmbh.com</p>
-                      <p>mail@goldleaf-gmbh.com</p>
+      <div class="footer-area footer-bg" id="footer_section_a" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
+        <h1 id="hello"></h1>
+        <div class="container">
+          <div class="footer-top footer-padding">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img
+                        style="height: 3rem;"
+                        src="assets/img/logo/logo 2.footer.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h6>goldleaf</h6>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
-                  <div class="single-footer-caption mb-50">
-                    <div class="footer-tittle">
-                      <h4>Useful Links</h4>
-                    </div>
-                    <!-- <div class="footer-cap">
-                                  <span>Dubai</span>
-                                  <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                                  </p>
-                              </div> -->
-                    <div class="footer-cap">
-                      <span>Dubai</span>
-                      <p> Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Instagram -->
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                  <div class="col-12">
-                    <h2 class="contact-title" style="color: goldenrod;">
-                      Get in Touch
-                    </h2>
-                  </div>
-                  <div class="col-lg-8">
-                    <!-- form start -->
-                    <form
-                      class="form-contact contact_form"
-                      id="submit-form"
-                      action=""
-                    >
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <textarea
-                              class="form-control w-100"
-                              name="message"
-                              id="message"
-                              cols="30"
-                              rows="9"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter Message'"
-                              placeholder=" Enter Message"
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group">
-                            <input
-                              class="form-control valid"
-                              name="name"
-                              id="name"
-                              type="text"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter your name'"
-                              placeholder="Enter your name"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group">
-                            <input
-                              class="form-control valid"
-                              name="email"
-                              id="email"
-                              type="email"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter email address'"
-                              placeholder="Email"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group">
-                            <input
-                              class="form-control"
-                              name="phone"
-                              id="phone"
-                              type="text"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter Phone Number'"
-                              placeholder="Phone Number"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group mt-3">
-                        <input
-                          onclick="funt()"
-                          type="submit"
-                          class="button button-contactForm boxed-btn"
-                          value="Submit"
-                        />
-                      </div>
-                    </form>
-                    <!-- form end -->
-                    <script>
-                      $('#submit-form').submit((e) => {
-                        e.preventDefault()
-                        $.ajax({
-                          url:
-                            'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
-                          data: $('#submit-form').serialize(),
-                          method: 'post',
-                          success: function (response) {
-                            alert('Form submitted successfully')
-                            window.location.reload()
-                            //window.location.href="https://google.com"
-                          },
-                          error: function (err) {
-                            alert('Something Error')
-                          },
-                        })
-                      })
-                    </script>
+                  <div class="footer-number">
+                    <h4>
+                      <span>
+                        <i
+                          class="fab fa-whatsapp"
+                          style="margin-right: 10px;"
+                        ></i>
+                        + 971
+                      </span>
+                      50 890 6949
+                    </h4>
+                    <h4>
+                      <span>
+                        <i
+                          class="fa fa-phone"
+                          style="margin-right: 10px;"
+                          aria-hidden="true"
+                        ></i>
+                        + 971
+                      </span>
+58 596 4561                    </h4>
+
+                    <p>www.goldleaf-gmbh.com</p>
+                    <p>mail@goldleaf-gmbh.com</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="footer-bottom">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-xl-9 col-lg-8">
-                  <div class="footer-copy-right">
-                    <p>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy;
-                      <script>
-                        document.write(new Date().getFullYear())
-                      </script>
-                      All rights reserved | This template is made with
-                      <i class="fa fa-heart" aria-hidden="true"></i>
-                      by
-                      <a href="https://colorlib.com" target="_blank">Auxxweb</a>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
+              <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Useful Links</h4>
+                  </div>
+                  <!-- <div class="footer-cap">
+                                <span>Dubai</span>
+                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                                </p>
+                            </div> -->
+                  <div class="footer-cap">
+                    <span>Dubai</span>
+                    <p> Sheikh Zayed Road , beside oasis mall, al qouz 1</p>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4">
-                  <!-- Footer Social -->
-                  <div class="footer-social f-right">
-                    <span>Follow Us</span>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/sai4ull">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"><i class="fas fa-globe"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
+              </div>
+              <!-- Instagram -->
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                <div class="col-12">
+                  <h2 class="contact-title" style="color: goldenrod;">
+                    Get in Touch
+                  </h2>
+                </div>
+                <div class="col-lg-8">
+                  <!-- form start -->
+                  <form
+                    class="form-contact contact_form"
+                    id="submit-form"
+                    action=""
+                  >
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control w-100"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="9"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Message'"
+                            placeholder=" Enter Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="name"
+                            id="name"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter your name'"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="email"
+                            id="email"
+                            type="email"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter email address'"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            name="phone"
+                            id="phone"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Phone Number'"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        onclick="funt()"
+                        type="submit"
+                        class="button button-contactForm boxed-btn"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                  <!-- form end -->
+                  <script>
+                    $('#submit-form').submit((e) => {
+                      e.preventDefault()
+                      $.ajax({
+                        url:
+                          'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
+                        data: $('#submit-form').serialize(),
+                        method: 'post',
+                        success: function (response) {
+                          alert('Form submitted successfully')
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                        },
+                        error: function (err) {
+                          alert('Something Error')
+                        },
+                      })
+                    })
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-9 col-lg-8">
+                <div class="footer-copy-right">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by
+                    <a href="https://colorlib.com" target="_blank">Auxxweb</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4">
+                <!-- Footer Social -->
+                <div class="footer-social f-right">
+                  <span>Follow Us</span>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/sai4ull">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-area footer-bg" id="footer_section_o">
-          <h1 id="hello"></h1>
-          <div class="container">
-            <div class="footer-top footer-padding">
-              <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
-                  <div class="single-footer-caption mb-50">
-                    <!-- logo -->
-                    <div class="footer-logo">
-                      <a href="index.html">
-                        <img
-                          style="height: 3rem;"
-                          src="assets/img/logo/logo 2.footer.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h6>goldleaf</h6>
-                    </div>
-                    <div class="footer-tittle">
-                      <div class="footer-pera">
-                        <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
-                      </div>
-                    </div>
-                    <div class="footer-number">
-                      <h4>
-                        <span>
-                          <i
-                            class="fab fa-whatsapp"
-                            style="margin-right: 10px;"
-                          ></i>
-                          + 49
-                        </span>
-                        179 979 45 01
-                      </h4>
-                      <h4>
-                        <span>
-                          <i
-                            class="fa fa-phone"
-                            style="margin-right: 10px;"
-                            aria-hidden="true"
-                          ></i>
-                          + 49
-                        </span>
-                        9122 18 99 210
-                      </h4>
-  
-                    
-                      <p>www.goldleaf-gmbh.com</p>
-                      <p>mail@goldleaf-gmbh.com</p>
+      </div>
+      <div class="footer-area footer-bg" id="footer_section_o" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
+        <h1 id="hello"></h1>
+        <div class="container">
+          <div class="footer-top footer-padding">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img
+                        style="height: 3rem;"
+                        src="assets/img/logo/logo 2.footer.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h6>goldleaf</h6>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <!-- <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p> -->
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
-                  <div class="single-footer-caption mb-50">
-                    <div class="footer-tittle">
-                      <h4>Useful Links</h4>
-                    </div>
-                    <!-- <div class="footer-cap">
-                                  <span>Dubai</span>
-                                  <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
-                                  </p>
-                              </div> -->
-                    <div class="footer-cap">
-                      <span>Germany</span>
-                      <p>91126 Schwach Germany</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Instagram -->
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
-                  <div class="col-12">
-                    <h2 class="contact-title" style="color: goldenrod;">
-                      Get in Touch
-                    </h2>
-                  </div>
-                  <div class="col-lg-8">
-                    <!-- form start -->
-                    <form
-                      class="form-contact contact_form"
-                      id="submit-form-a"
-                      action=""l
-                    >
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <textarea
-                              class="form-control w-100"
-                              name="message"
-                              id="message"
-                              cols="30"
-                              rows="9"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter Message'"
-                              placeholder=" Enter Message"
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group">
-                            <input
-                              class="form-control valid"
-                              name="name"
-                              id="name"
-                              type="text"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter your name'"
-                              placeholder="Enter your name"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group">
-                            <input
-                              class="form-control valid"
-                              name="email"
-                              id="email"
-                              type="email"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter email address'"
-                              placeholder="Email"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group">
-                            <input
-                              class="form-control"
-                              name="phone"
-                              id="phone"
-                              type="text"
-                              onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter Phone Number'"
-                              placeholder="Phone Number"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group mt-3">
-                        <input
-                          onclick="funt()"
-                          type="submit"
-                          class="button button-contactForm boxed-btn"
-                          value="Submit"
-                        />
-                      </div>
-                    </form>
-                    <!-- form end -->
-                    <script>
-                      $('#submit-form-a').submit((e) => {
-                        e.preventDefault()
-                        $.ajax({
-                          url:
-                            'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
-                          data: $('#submit-form').serialize(),
-                          method: 'post',
-                          success: function (response) {
-                            alert('Form submitted successfully')
-                            window.location.reload()
-                            //window.location.href="https://google.com"
-                          },
-                          error: function (err) {
-                            alert('Something Error')
-                          },
-                        })
-                      })
-                    </script>
+                  <div class="footer-number">
+                   
+                    <h4>
+                      <span>
+                        <i
+                          class="fa fa-phone"
+                          style="margin-right: 10px;"
+                          aria-hidden="true"
+                        ></i>
+                        + 49
+                      </span>
+                      9122 18 99 210
+                    </h4>
+
+                  
+                    <p>www.goldleaf-gmbh.com</p>
+                    <p>mail@goldleaf-gmbh.com</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="footer-bottom">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-xl-9 col-lg-8">
-                  <div class="footer-copy-right">
-                    <p>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy;
-                      <script>
-                        document.write(new Date().getFullYear())
-                      </script>
-                      All rights reserved | This template is made with
-                      <i class="fa fa-heart" aria-hidden="true"></i>
-                      by
-                      <a href="https://colorlib.com" target="_blank">Auxxweb</a>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
+              <div class="col-xl-3 col-lg-2 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Useful Links</h4>
+                  </div>
+                  <!-- <div class="footer-cap">
+                                <span>Dubai</span>
+                                <p>Sheikh Zayed Road, beside oasis mall, al qouz 1, Dubai
+                                </p>
+                            </div> -->
+                  <div class="footer-cap">
+                    <span>Germany</span>
+                    <p>Gold Leaf AP GmbH
+                      Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                      </p>
+                      <br>
+                      <span>Trading license: Nuremberg, HRB 36197
+                        VAT-ID: DE 323068388
+                        Tax-ID: 241 / 127 / 61043
+                        </span>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4">
-                  <!-- Footer Social -->
-                  <div class="footer-social f-right">
-                    <span>Follow Us</span>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/sai4ull">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"><i class="fas fa-globe"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
+              </div>
+              <!-- Instagram -->
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                <div class="col-12">
+                  <h2 class="contact-title" style="color: goldenrod;">
+                    Get in Touch
+                  </h2>
+                </div>
+                <div class="col-lg-8">
+                  <!-- form start -->
+                  <form
+                    class="form-contact contact_form"
+                    id="submit-form-a"
+                    action=""l
+                  >
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control w-100"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="9"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Message'"
+                            placeholder=" Enter Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="name"
+                            id="name"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter your name'"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control valid"
+                            name="email"
+                            id="email"
+                            type="email"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter email address'"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            name="phone"
+                            id="phone"
+                            type="text"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Phone Number'"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        onclick="funt()"
+                        type="submit"
+                        class="button button-contactForm boxed-btn"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                  <!-- form end -->
+                  <script>
+                    $('#submit-form-a').submit((e) => {
+                      e.preventDefault()
+                      $.ajax({
+                        url:
+                          'https://script.google.com/macros/s/AKfycbzgIBdaPrbebYpxzRvfTAhdIOXL_rW1RZOb_phLh8KqfZNGB9rsDFxDGMqdw85DMCEb/exec',
+                        data: $('#submit-form').serialize(),
+                        method: 'post',
+                        success: function (response) {
+                          alert('Form submitted successfully')
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                        },
+                        error: function (err) {
+                          alert('Something Error')
+                        },
+                      })
+                    })
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-9 col-lg-8">
+                <div class="footer-copy-right">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by
+                    <a href="https://colorlib.com" target="_blank">Auxxweb</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4">
+                <!-- Footer Social -->
+                <div class="footer-social f-right">
+                  <span>Follow Us</span>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/sai4ull">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Footer End-->
+      </div>
+      <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
     <div id="back-top" >

@@ -24,26 +24,26 @@
             <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
-                function googleTranslateElementInit() {
-                  new google.translate.TranslateElement(
-                    { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
-                    'google_translate_element',
-                  )
-          
-                  window.setInterval(function () {
-                    // Get the selected language
-                    var lang = document.querySelector('html').getAttribute('lang')
-                    if (lang == 'ar') {
-                      // Change footer color to white for selected languages
-                      document.getElementById('footer_section_a').style.display = 'block'
-                      document.getElementById('footer_section_o').style.display = 'none'
-                    } else {
-                      // Change footer color to green for other languages
-                      document.getElementById('footer_section_a').style.display = 'none'
-                      document.getElementById('footer_section_o').style.display = 'block'
-                    }
-                  }, 5000)
-                }
+               function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en', includedLanguages: 'en,de,ar,ru' },
+          'google_translate_element',
+        )
+
+        window.setInterval(function () {
+          // Get the selected language
+          var lang = document.querySelector('html').getAttribute('lang')
+          if (lang == 'de') {
+            // Change footer color to white for selected languages
+            document.getElementById('footer_section_o').style.display = 'block'
+            document.getElementById('footer_section_a').style.display = 'none'
+          } else  {
+            // Change footer color to green for other languages
+            document.getElementById('footer_section_o').style.display = 'none'
+            document.getElementById('footer_section_a').style.display = 'block'
+          }
+        }, 5000)
+      }
 
                                 // Function to open the modal
 function openModal(imgElement) {
@@ -81,7 +81,7 @@ function closeModal() {
                 <div class="menu-wrapper d-flex align-items-center justify-content-between">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="" ></a>
+                        <a href="index.html">          <img style="width: 4rem;height: 4rem;" src="assets/img/logo/logo.jpg" alt="" /></a>
                     </div>
                     
                     <!-- Main-menu -->
@@ -133,7 +133,7 @@ function closeModal() {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center pt-80">
-                                <h2>Our Products</h2>
+                                <h2>Our Gallery</h2>
                             </div>
                         </div>
                     </div>
@@ -141,8 +141,8 @@ function closeModal() {
             </div> 
         </div>
         <!-- Hero End -->
-        <!--? our info Start -->
-        <!-- <div  class="our-info-area pt-170 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
+        <!-- ? our info Start -->
+        <div  class="our-info-area pt-170 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
             <div class="container" >
               <div class="row justify-content-center">
 
@@ -150,30 +150,35 @@ function closeModal() {
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-info mb-60" >
                             <div class="info-caption">
-                                <h4>MADE OF GOLD LEAF</h4>
-                                <p> Pure gold leaf is an almost impalpable layer of precious metal, obtained by subjecting an ingot to 10 processing phases.  </p>
+                                <h4>Bespoke Solutions</h4>
+                                <p> Explore how our gold leaf applications can be tailored to your unique vision, with customizable options available for color, finish and surface .
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-info mb-60">
                             <div class="info-caption">
-                                <h4>HANDWORK</h4>
-                                <p> Its production requires exceptional craftsmanship and in-depth knowledge of the secrets of an ancient craft, which is constantly evolving.</p>
+                                <h4>UnparalleledCraftsmanship</h4>
+                                <p>Our gold leaf products are meticulously crafted using traditional techniques combined with modern precision, ensuring the highest standards of quality and authenticity.
+
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-info mb-60">
                             <div class="info-caption">
-                                <h4>SELF ADHESIVE GOLD</h4>
-                                <p>This is a method for applying gold leaf with an external adhesive material.Goldleaf will bond the target by its own. </p>
+                                <h4>Customer Endorsement</h4>
+                                <p>Discover the transformative influence of our goldleaf orginal designs through firsthand accounts, showcasing the remarkable quality and service you can anticipate when selecting our products.
+
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Our Info start -->
          <!--? Services Ara Start -->
          <div class="services-area section-padding3">
@@ -185,10 +190,10 @@ function closeModal() {
                 <div class="row justify-content-center">
                     <div class="cl-xl-7 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-70">
+                        <!-- <div class="section-tittle text-center mb-70">
                             <span>Our Professional Products</span>
                             <h2>Best Gold Leaf Product</h2>
-                        </div> 
+                        </div>  -->
                     </div>
                 </div>
                 <div class="row">
@@ -326,16 +331,17 @@ function closeModal() {
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
-                            <div class="services-img">
-                                <img onclick="openModal(this)" src="assets/img/gallery/service_thirtynine.jpeg" style="height: 17rem;" alt="">
-                             </div>
-                             <div class="services-caption">
-                                <h6 style="color: black;">salt shaker luxury soap with gold leaf sm</h6>
-                                <!-- <p class="pera2">. </p> -->
-                            </div>
-                        </div>
-                    </div>
+                      <div class="single-services mb-200">
+                          <div class="services-img">
+                              <img onclick="openModal(this)" src="assets/img/gallery/service_twentythree.jpeg" style="height: 15rem;" alt="">
+                           </div>
+                           <div class="services-caption">
+                              <h6 style="color: black;">laminated glass – gold tiles customized design / décor custom made size surface: glossy 20 colors available 
+                              </h6>
+                              <!-- <p class="pera2">deco wall design restaurant area SPA area bathroom kitchen flooring </p> -->
+                          </div>
+                      </div>
+                  </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-10">
@@ -461,112 +467,93 @@ function closeModal() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
-                            <div class="services-img">
-                                <img onclick="openModal(this)" src="assets/img/gallery/service_twentythree.jpeg" style="height: 16rem;" alt="">
-                             </div>
-                             <div class="services-caption">
-                                <h6 style="color: black;">laminated glass – gold tiles customized design / décor custom made size surface: glossy 20 colors available 
-                                </h6>
-                                <!-- <p class="pera2">deco wall design restaurant area SPA area bathroom kitchen flooring </p> -->
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="row">
                     
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_twentysix.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">stuff & items gold plated items surface: glossy 3 colors available   </h6>
-                                <!-- <p class="pera2">bathroom, wellness areas decoration e.g. dining / breakfast room, hotel lobby, entrance area, elevator, suites, restroom. </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                  <img onclick="openModal(this)" src="assets/img/gallery/service_twentyseven.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">Gold behind acrylic glass made to measure surface: glossy 20 colors available</h6>
-                                <!-- <p class="pera2">for pictures ruler-pictures hotel signs frames for mirrors elevator edgings. </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                    
                   
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirty.jpeg" style="height: 12.5rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">24 carat lettering lettering or names logos an information behind acrylic / tempered / laminated glass surface: glossy 20 colors available </h6>
-                                <!-- <p class="pera2">room numbers signpost. </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyone.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole glass or particularly </h6>
-                                <!-- <p class="pera2">24 carat gold leaf on glasses . </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirtytwo.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">gold application whole plate or particularly </h6>
-                                <!-- <p class="pera2">24 carat gold leaf on plates. </p> -->
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyfour.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">gold application whole piece or particularly </h6>
-                                <!-- <p class="pera2">24 carat gold leaf on cutlery . </p> -->
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyfive.jpeg" style="height: 15rem;" alt="">
                              </div>
                              <div class="services-caption">
                                <h6 style="color: black;">re-usable straws plated with 24 carat gold sustainable </h6>
-                                <!-- <p class="pera2">24 carat gold straw. </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
-                        <div class="single-services mb-200">
+                        <!-- <div class="single-services mb-200">
                             <div class="services-img">
                                 <img onclick="openModal(this)" src="assets/img/gallery/service_thirtyeight.jpeg" style="height: 16rem;" alt="">
                              </div>
                              <div class="services-caption">
                                 <h6 style="color: black;">hinge fittings bathroom faucet </h6>
-                                <!-- <p class="pera2"> nearly all required items can be gold plated (ground material metal or stainless steel). </p> -->
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                    
                    
@@ -577,7 +564,7 @@ function closeModal() {
         </div>
         <!-- Services Ara End -->
     <!-- Hero End -->
-    <div class="brand-area pt-120 pb-120">
+    <!-- <div class="brand-area pt-120 pb-120">
         <div class="row">
             <div class="col-xl-12">
                 <div class="hero-cap hero-cap2 text-center pt-80">
@@ -608,10 +595,10 @@ function closeModal() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Brand Area End -->
         <!-- Want To work -->
-        <section class="wantToWork-area w-padding2">
+        <!-- <section class="wantToWork-area w-padding2">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-8 col-lg-8 col-md-8">
@@ -624,13 +611,12 @@ function closeModal() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Want To work End -->
     </main>
     <footer>
-       <!--? Footer Start-->
       <!--? Footer Start-->
-      <div class="footer-area footer-bg" id="footer_section_a" style="display: none;">
+      <div class="footer-area footer-bg" id="footer_section_a" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -832,7 +818,7 @@ function closeModal() {
           </div>
         </div>
       </div>
-      <div class="footer-area footer-bg" id="footer_section_o">
+      <div class="footer-area footer-bg" id="footer_section_o" style="background: linear-gradient(to right, #aba9a8 0%, #2a2b2b 100%);">
         <h1 id="hello"></h1>
         <div class="container">
           <div class="footer-top footer-padding">
@@ -856,16 +842,7 @@ function closeModal() {
                     </div>
                   </div>
                   <div class="footer-number">
-                    <h4>
-                      <span>
-                        <i
-                          class="fab fa-whatsapp"
-                          style="margin-right: 10px;"
-                        ></i>
-                        + 49
-                      </span>
-                      179 979 45 01
-                    </h4>
+                   
                     <h4>
                       <span>
                         <i
@@ -896,7 +873,14 @@ function closeModal() {
                             </div> -->
                   <div class="footer-cap">
                     <span>Germany</span>
-                    <p>91126 Schwach Germany</p>
+                    <p>Gold Leaf AP GmbH
+                      Lindenbachstrasse 3, 91126 Schwabach Germany (Bavaria)
+                      </p>
+                      <br>
+                      <span>Trading license: Nuremberg, HRB 36197
+                        VAT-ID: DE 323068388
+                        Tax-ID: 241 / 127 / 61043
+                        </span>
                   </div>
                 </div>
               </div>
