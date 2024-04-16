@@ -3473,7 +3473,7 @@ hero-btn {
 
 /* line 17, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-height2 {
-  height: 500px;
+  height: 100vh;
   background-size: cover;
 }
 
