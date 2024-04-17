@@ -3667,7 +3667,6 @@ hero-btn {
   color: #fff;
   font-size: 70px;
   font-weight: 700;
-  text-transform: none;
   line-height: 1;
 }
 
@@ -3696,7 +3695,6 @@ hero-btn {
 .slider-area2 .hero-cap .breadcrumb a {
   color: #dcdcdc;
   font-size: 18px;
-  text-transform: none;
 }
 
 /* line 185, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
