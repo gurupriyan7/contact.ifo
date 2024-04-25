@@ -37,10 +37,12 @@
             // Change footer color to white for selected languages
             document.getElementById('footer_section_o').style.display = 'block'
             document.getElementById('footer_section_a').style.display = 'none'
+            document.getElementById("mapdubai").style.display="none"
           } else  {
             // Change footer color to green for other languages
             document.getElementById('footer_section_o').style.display = 'none'
             document.getElementById('footer_section_a').style.display = 'block'
+            document.getElementById("mapdubai").style.display="block"
           }
         }, 5000)
       }
@@ -251,7 +253,7 @@ function closeModal() {
                   class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
           
-              <div class="col-lg-5"  style="height: 20rem;margin: 2rem; margin-left: 1rem;width: 20rem;">
+              <div id="mapdubai" class="col-lg-5"  style="height: 20rem;margin: 2rem; margin-left: 1rem;width: 20rem;display: block;" >
                 <h5 style="color: goldenrod;">Dubai</h5>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14443.952738704667!2d55.2413349!3d25.1698768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ec8870daed%3A0xe7f755d4a39c5ef1!2sOasis%20Mall!5e0!3m2!1sen!2sin!4v1711334427441!5m2!1sen!2sin"
